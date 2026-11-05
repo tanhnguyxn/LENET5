@@ -1,0 +1,6 @@
+Pipeline max_in_flight=6 max_consecutive_windows=24
+Completed run=         0 cycles=     24888 errors=         0
+Pipeline max_in_flight=6 max_consecutive_windows=24
+Completed run=         1 cycles=     24888 errors=         0
+PASS tails: every intermediate value, shared PEA, two images
+tests/tb_tails.v:355: $finish called at 619880000 (1ps)

@@ -1,0 +1,2 @@
+PASS PEA: signed products, pipeline bubbles, wide sums and postprocess
+tests/tb_pea.v:100: $finish called at 274000 (1ps)

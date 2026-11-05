@@ -1,0 +1,6 @@
+Pipeline max_in_flight=6 max_consecutive_windows=24
+Completed run=         0 cycles=    200001 errors=         0
+Pipeline max_in_flight=6 max_consecutive_windows=24
+Completed run=         1 cycles=    200001 errors=         0
+PASS classic: every intermediate value, shared PEA, two images
+tests/tb_classic.v:355: $finish called at 4920600000 (1ps)

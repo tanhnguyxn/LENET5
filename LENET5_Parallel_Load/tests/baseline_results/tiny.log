@@ -1,0 +1,6 @@
+Pipeline max_in_flight=6 max_consecutive_windows=24
+Completed run=         0 cycles=     61531 errors=         0
+Pipeline max_in_flight=6 max_consecutive_windows=24
+Completed run=         1 cycles=     61531 errors=         0
+PASS tiny: every intermediate value, shared PEA, two images
+tests/tb_tiny.v:355: $finish called at 1494240000 (1ps)

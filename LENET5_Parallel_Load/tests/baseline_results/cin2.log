@@ -1,0 +1,2 @@
+PASS Cin2: 45 outputs, 36 windows, max_in_flight=3 cycles=1424
+tests/tb_cin2.v:102: $finish called at 14300000 (1ps)

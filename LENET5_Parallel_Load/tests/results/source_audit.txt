@@ -1,0 +1,30 @@
+pea: PASS; Verilog-2001 compile without warnings
+cin2: PASS; Verilog-2001 compile without warnings
+tails: PASS; Verilog-2001 compile without warnings
+classic: PASS; Verilog-2001 compile without warnings
+tiny: PASS; Verilog-2001 compile without warnings
+Ping_Pong_Memory.v: forbidden-token audit PASS
+Conv_Bank_5x5.v: forbidden-token audit PASS
+Pool_Controller.v: forbidden-token audit PASS
+Conv_Controller.v: forbidden-token audit PASS
+Weight_Memory.v: forbidden-token audit PASS
+PE_5x5.v: forbidden-token audit PASS
+PEA_5x5.v: forbidden-token audit PASS
+Adder_Tree_25.v: forbidden-token audit PASS
+FC_Controller.v: forbidden-token audit PASS
+Sync_RAM_1R1W.v: forbidden-token audit PASS
+Lenet5_Engine.v: forbidden-token audit PASS
+Line_Buffer_Memory.v: forbidden-token audit PASS
+Partial_Sum_Memory.v: forbidden-token audit PASS
+Arbiter.v: forbidden-token audit PASS
+MaxPool2x2_Q16.v: forbidden-token audit PASS
+ReLU_Q16.v: forbidden-token audit PASS
+Postprocess_Q16.v: forbidden-token audit PASS
+Line_Buffer_5x5.v: forbidden-token audit PASS
+Bias_Memory.v: forbidden-token audit PASS
+Lenet5_Core.v: forbidden-token audit PASS
+tests/tb_pea.v: forbidden-token audit PASS
+tests/tb_tiny.v: forbidden-token audit PASS
+tests/tb_tails.v: forbidden-token audit PASS
+tests/tb_cin2.v: forbidden-token audit PASS
+tests/tb_classic.v: forbidden-token audit PASS
