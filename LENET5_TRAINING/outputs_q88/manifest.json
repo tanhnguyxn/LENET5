@@ -1,0 +1,113 @@
+{
+  "format": "signed int16, 8 fractional bits",
+  "scale": 256,
+  "rounding": "nearest, ties to even",
+  "mac": "bias_q + sum((x_q * w_q) >> 8)",
+  "accumulator_bits": 48,
+  "output": "ReLU where specified, then int16 saturation",
+  "input": "round((pixel / 255.0) * 256)",
+  "conv_order": "output_channel,input_channel,kernel_y,kernel_x",
+  "fc_order": "output_neuron,input_index",
+  "flatten_order": "channel,row,column",
+  "tensors": {
+    "conv1.weight": {
+      "shape": [
+        6,
+        1,
+        5,
+        5
+      ],
+      "count": 150,
+      "hex_file": "conv1_weight.hex",
+      "clipped_parameters": 0,
+      "max_abs_quantization_error": 0.0019322186708450317
+    },
+    "conv1.bias": {
+      "shape": [
+        6
+      ],
+      "count": 6,
+      "hex_file": "conv1_bias.hex",
+      "clipped_parameters": 0,
+      "max_abs_quantization_error": 0.0015737321227788925
+    },
+    "conv2.weight": {
+      "shape": [
+        16,
+        6,
+        5,
+        5
+      ],
+      "count": 2400,
+      "hex_file": "conv2_weight.hex",
+      "clipped_parameters": 0,
+      "max_abs_quantization_error": 0.0019529163837432861
+    },
+    "conv2.bias": {
+      "shape": [
+        16
+      ],
+      "count": 16,
+      "hex_file": "conv2_bias.hex",
+      "clipped_parameters": 0,
+      "max_abs_quantization_error": 0.0018893182277679443
+    },
+    "fc1.weight": {
+      "shape": [
+        120,
+        256
+      ],
+      "count": 30720,
+      "hex_file": "fc1_weight.hex",
+      "clipped_parameters": 0,
+      "max_abs_quantization_error": 0.0019531100988388062
+    },
+    "fc1.bias": {
+      "shape": [
+        120
+      ],
+      "count": 120,
+      "hex_file": "fc1_bias.hex",
+      "clipped_parameters": 0,
+      "max_abs_quantization_error": 0.001943342387676239
+    },
+    "fc2.weight": {
+      "shape": [
+        84,
+        120
+      ],
+      "count": 10080,
+      "hex_file": "fc2_weight.hex",
+      "clipped_parameters": 0,
+      "max_abs_quantization_error": 0.001952841877937317
+    },
+    "fc2.bias": {
+      "shape": [
+        84
+      ],
+      "count": 84,
+      "hex_file": "fc2_bias.hex",
+      "clipped_parameters": 0,
+      "max_abs_quantization_error": 0.0019346550107002258
+    },
+    "fc3.weight": {
+      "shape": [
+        10,
+        84
+      ],
+      "count": 840,
+      "hex_file": "fc3_weight.hex",
+      "clipped_parameters": 0,
+      "max_abs_quantization_error": 0.001952841877937317
+    },
+    "fc3.bias": {
+      "shape": [
+        10
+      ],
+      "count": 10,
+      "hex_file": "fc3_bias.hex",
+      "clipped_parameters": 0,
+      "max_abs_quantization_error": 0.0018493607640266418
+    }
+  }
+}
