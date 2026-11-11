@@ -1,0 +1,45 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_Lenet5_Core_behav xil_defaultlib.tb_Lenet5_Core xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Arbiter
+Compiling module xil_defaultlib.Line_Buffer_Memory
+Compiling module xil_defaultlib.Line_Buffer_5x5
+Compiling module xil_defaultlib.ReLU_Q16
+Compiling module xil_defaultlib.Postprocess_Q16
+Compiling module xil_defaultlib.Sync_RAM_1R1W(DATA_WIDTH=48,DEPT...
+Compiling module xil_defaultlib.Partial_Sum_Memory
+Compiling module xil_defaultlib.Parallel_Data_Loader
+Compiling module xil_defaultlib.Conv_Controller
+Compiling module xil_defaultlib.FC_Controller
+Compiling module xil_defaultlib.MaxPool2x2_Q16
+Compiling module xil_defaultlib.Pool_Controller
+Compiling module xil_defaultlib.PE_5x5
+Compiling module xil_defaultlib.Adder_Tree_25
+Compiling module xil_defaultlib.Conv_Bank_5x5
+Compiling module xil_defaultlib.PEA_5x5
+Compiling module xil_defaultlib.Sync_RAM_1R1W(DEPTH=3456)
+Compiling module xil_defaultlib.Ping_Pong_Memory
+Compiling module xil_defaultlib.Sync_RAM_1R1W(DEPTH=150)
+Compiling module xil_defaultlib.Sync_RAM_1R1W(DEPTH=2400)
+Compiling module xil_defaultlib.Sync_RAM_1R1W(DEPTH=30720)
+Compiling module xil_defaultlib.Sync_RAM_1R1W(DEPTH=10080)
+Compiling module xil_defaultlib.Sync_RAM_1R1W(DEPTH=840)
+Compiling module xil_defaultlib.Weight_Memory
+Compiling module xil_defaultlib.Sync_RAM_1R1W(DEPTH=6)
+Compiling module xil_defaultlib.Sync_RAM_1R1W(DEPTH=16)
+Compiling module xil_defaultlib.Sync_RAM_1R1W(DEPTH=120)
+Compiling module xil_defaultlib.Sync_RAM_1R1W(DEPTH=84)
+Compiling module xil_defaultlib.Sync_RAM_1R1W(DEPTH=10)
+Compiling module xil_defaultlib.Bias_Memory
+Compiling module xil_defaultlib.Lenet5_Engine_default
+Compiling module xil_defaultlib.Lenet5_Core
+Compiling module xil_defaultlib.tb_Lenet5_Core
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_Lenet5_Core_behav

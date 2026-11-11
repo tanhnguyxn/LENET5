@@ -1,0 +1,37 @@
+Time resolution is 1 ps
+Reading HEX files from:
+C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/train_model/outputs_q88/
+Input and golden files loaded.
+Input[0]=0000, Input[400]=0000, Input[783]=0000
+Loading Conv1 weights...
+Loading Conv2 weights...
+Loading FC1 weights...
+Loading FC2 weights...
+Loading FC3 weights...
+Loading biases...
+Loading input image...
+Input loading completed: 784 pixels written to DUT.
+Starting inference...
+Inference finished.
+Clocks during start/polling: 74046
+------------------------------------------------------------
+Digit | RTL HEX | Golden HEX | RTL Q8.8 | Golden Q8.8 | Result
+------------------------------------------------------------
+0 | f793 | f793 | -8.425781 | -8.425781 | PASS
+1 | 00fb | 00fb | 0.980469 | 0.980469 | PASS
+2 | f974 | f974 | -6.546875 | -6.546875 | PASS
+3 | fcd7 | fcd7 | -3.160156 | -3.160156 | PASS
+4 | ff70 | ff70 | -0.562500 | -0.562500 | PASS
+5 | f971 | f971 | -6.558594 | -6.558594 | PASS
+6 | f041 | f041 | -15.746094 | -15.746094 | PASS
+7 | 0b3f | 0b3f | 11.246094 | 11.246094 | PASS
+8 | f92a | f92a | -6.835938 | -6.835938 | PASS
+9 | ffcf | ffcf | -0.191406 | -0.191406 | PASS
+------------------------------------------------------------
+RTL predicted digit    : 7
+Golden predicted digit : 7
+RTL score              : 0b3f / 11.246094
+Golden score           : 0b3f / 11.246094
+Logit mismatches       : 0 / 10
+PASS: all logits and prediction match golden.
+$finish called at time : 1644930 ns : File "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/tests/tb_Lenet5_Core.v" Line 542

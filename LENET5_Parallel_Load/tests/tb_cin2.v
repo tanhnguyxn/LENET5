@@ -1,20 +1,22 @@
 `timescale 1ns/1ps
 module tb_cin2;
+
+// Change this parameter only when moving the vector directory.
+parameter DATA_ROOT = "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/tests";
     reg clk_r=0;
     always #5 clk_r=~clk_r;
     reg rst_n_r=0, start_r=0;
     reg [15:0] input_r[0:97], weight_r[0:249], bias_r[0:4], expected_r[0:44];
     reg [15:0] rd_data_r=0;
     reg rd_valid_r=0;
-    wire weight_en_w, bias_en_w;
-    wire [15:0] weight_addr_w, bias_addr_w;
-    reg [15:0] weight_data_r=0, bias_data_r=0;
-    reg weight_valid_r=0, bias_valid_r=0;
+    wire weight_mem_en_w, bias_mem_en_w;
+    wire [15:0] weight_mem_addr_w, bias_mem_addr_w;
+    reg [15:0] weight_mem_data_r=0, bias_mem_data_r=0;
+    reg weight_mem_valid_r=0, bias_mem_valid_r=0;
     reg [44:0] visited_r=0;
     reg [31:0] errors_r=0, writes_r=0, cycles_r=0, requests_r=0;
     reg [31:0] in_flight_r=0, max_in_flight_r=0;
     wire busy_w,done_w,rd_en_w,wr_en_w,load_w,valid_w,psum_valid_w;
-    wire [1:0] kind_w;
     wire [15:0] rd_addr_w,wr_addr_w,wr_data_w;
     wire [1599:0] weights_w;
     wire [399:0] window_w;
@@ -29,10 +31,10 @@ module tb_cin2;
         .busy_o(busy_w), .done_o(done_w), .rd_en_o(rd_en_w),
          .rd_addr_o(rd_addr_w),
         .rd_data_i(rd_data_r), .rd_valid_i(rd_valid_r),
-        .weight_rd_en_o(weight_en_w), .weight_rd_addr_o(weight_addr_w),
-        .weight_rd_data_i(weight_data_r), .weight_rd_valid_i(weight_valid_r),
-        .bias_rd_en_o(bias_en_w), .bias_rd_addr_o(bias_addr_w),
-        .bias_rd_data_i(bias_data_r), .bias_rd_valid_i(bias_valid_r),
+        .weight_mem_rd_en_o(weight_mem_en_w), .weight_mem_rd_addr_o(weight_mem_addr_w),
+        .weight_mem_rd_data_i(weight_mem_data_r), .weight_mem_rd_valid_i(weight_mem_valid_r),
+        .bias_mem_rd_en_o(bias_mem_en_w), .bias_mem_rd_addr_o(bias_mem_addr_w),
+        .bias_mem_rd_data_i(bias_mem_data_r), .bias_mem_rd_valid_i(bias_mem_valid_r),
         .wr_en_o(wr_en_w), .wr_addr_o(wr_addr_w), .wr_data_o(wr_data_w),
         .pea_weight_load_o(load_w), .pea_weight_o(weights_w),
         .pea_window_o(window_w), .pea_valid_o(valid_w),
@@ -48,10 +50,10 @@ module tb_cin2;
     // Fixed-Latency Memory Model and Scoreboard
     //-------------------------------------//
     always @(posedge clk_r) begin
-        weight_valid_r <= rst_n_r && weight_en_w;
-        bias_valid_r <= rst_n_r && bias_en_w;
-        if (weight_en_w) weight_data_r<=weight_r[weight_addr_w];
-        if (bias_en_w) bias_data_r<=bias_r[bias_addr_w];
+        weight_mem_valid_r <= rst_n_r && weight_mem_en_w;
+        bias_mem_valid_r <= rst_n_r && bias_mem_en_w;
+        if (weight_mem_en_w) weight_mem_data_r<=weight_r[weight_mem_addr_w];
+        if (bias_mem_en_w) bias_mem_data_r<=bias_r[bias_mem_addr_w];
         rd_valid_r <= rst_n_r && rd_en_w;
         if (rst_n_r && rd_en_w) begin
             rd_data_r <= input_r[rd_addr_w];
@@ -86,10 +88,10 @@ module tb_cin2;
     // Stimulus and Completion Checks
     //-------------------------------------//
     initial begin
-        $readmemh("tests/cin2/input.txt",input_r);
-        $readmemh("tests/cin2/weight.txt",weight_r);
-        $readmemh("tests/cin2/bias.txt",bias_r);
-        $readmemh("tests/cin2/expected.txt",expected_r);
+        $readmemh({DATA_ROOT, "/cin2/input.txt"},input_r);
+        $readmemh({DATA_ROOT, "/cin2/weight.txt"},weight_r);
+        $readmemh({DATA_ROOT, "/cin2/bias.txt"},bias_r);
+        $readmemh({DATA_ROOT, "/cin2/expected.txt"},expected_r);
         repeat (4) @(negedge clk_r);
         rst_n_r=1;
         @(negedge clk_r);

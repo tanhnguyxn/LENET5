@@ -1,5 +1,8 @@
 `timescale 1ns/1ps
 module tb_pea;
+
+// Change this parameter only when moving the vector directory.
+parameter DATA_ROOT = "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/tests";
 reg clk_r = 0;
 always #5 clk_r = ~clk_r;
 reg rst_n_r = 0, load_r = 0, valid_r = 0;
@@ -44,9 +47,9 @@ PEA_5x5 dut(.clk_i(clk_r),
         received_r = received_r+1;
     end
     initial begin
-        $readmemh("tests/pea/weights.txt", weights_mem_r);
-        $readmemh("tests/pea/inputs.txt", inputs_mem_r);
-        $readmemh("tests/pea/expected.txt", expected_r);
+        $readmemh("C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/tests/pea/weights.txt", weights_mem_r);
+        $readmemh("C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/tests/pea/inputs.txt", inputs_mem_r);
+        $readmemh("C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/tests/pea/expected.txt", expected_r);
         repeat (4) @(negedge clk_r);
         rst_n_r = 1;
         begin

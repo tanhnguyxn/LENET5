@@ -1,0 +1,45 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/Adder_Tree_25.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_Tree_25
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/Arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/Bias_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bias_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/Conv_Bank_5x5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv_Bank_5x5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/Conv_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/FC_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_Controller
+WARNING: [VRFC 10-3380] identifier 'loader_started_r' is used before its declaration [C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/FC_Controller.v:195]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/Lenet5_Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lenet5_Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/Lenet5_Engine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lenet5_Engine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/Line_Buffer_5x5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Line_Buffer_5x5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/Line_Buffer_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Line_Buffer_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/MaxPool2x2_Q16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MaxPool2x2_Q16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/PEA_5x5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PEA_5x5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/PE_5x5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE_5x5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/Parallel_Data_Loader.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Parallel_Data_Loader
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/Partial_Sum_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Partial_Sum_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/Ping_Pong_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ping_Pong_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/Pool_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pool_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/Postprocess_Q16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Postprocess_Q16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/ReLU_Q16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReLU_Q16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/Sync_RAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sync_RAM_1R1W
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/RTL/Weight_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Weight_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/tests/tb_Lenet5_Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Lenet5_Core

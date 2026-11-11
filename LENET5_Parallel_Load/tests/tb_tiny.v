@@ -1,5 +1,9 @@
 `timescale 1ns/1ps
 module tb_tiny;
+    reg [31:0] in_flight_r=0, max_in_flight_r=0, burst_r=0, max_burst_r=0;
+
+// Change this parameter only when moving the vector directory.
+parameter DATA_ROOT = "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/tests";
 reg clk_r = 0;
 always #5 clk_r = ~clk_r;
 reg rst_n_r = 0;
@@ -165,16 +169,16 @@ Lenet5_Core #(
     initial begin
         errors_r = 0;
         cycles_r = 0;
-        $readmemh("tests/tiny/conv1_w.txt", conv1_w_r);
-        $readmemh("tests/tiny/conv1_b.txt", conv1_b_r);
-        $readmemh("tests/tiny/conv2_w.txt", conv2_w_r);
-        $readmemh("tests/tiny/conv2_b.txt", conv2_b_r);
-        $readmemh("tests/tiny/fc1_w.txt", fc1_w_r);
-        $readmemh("tests/tiny/fc1_b.txt", fc1_b_r);
-        $readmemh("tests/tiny/fc2_w.txt", fc2_w_r);
-        $readmemh("tests/tiny/fc2_b.txt", fc2_b_r);
-        $readmemh("tests/tiny/fc3_w.txt", fc3_w_r);
-        $readmemh("tests/tiny/fc3_b.txt", fc3_b_r);
+        $readmemh({DATA_ROOT, "/tiny/conv1_w.txt"}, conv1_w_r);
+        $readmemh({DATA_ROOT, "/tiny/conv1_b.txt"}, conv1_b_r);
+        $readmemh({DATA_ROOT, "/tiny/conv2_w.txt"}, conv2_w_r);
+        $readmemh({DATA_ROOT, "/tiny/conv2_b.txt"}, conv2_b_r);
+        $readmemh({DATA_ROOT, "/tiny/fc1_w.txt"}, fc1_w_r);
+        $readmemh({DATA_ROOT, "/tiny/fc1_b.txt"}, fc1_b_r);
+        $readmemh({DATA_ROOT, "/tiny/fc2_w.txt"}, fc2_w_r);
+        $readmemh({DATA_ROOT, "/tiny/fc2_b.txt"}, fc2_b_r);
+        $readmemh({DATA_ROOT, "/tiny/fc3_w.txt"}, fc3_w_r);
+        $readmemh({DATA_ROOT, "/tiny/fc3_b.txt"}, fc3_b_r);
         repeat (4) @(negedge clk_r);
         rst_n_r = 1;
         begin
@@ -266,24 +270,24 @@ Lenet5_Core #(
                 visited5_r = 0;
                 visited6_r = 0;
                 if (run_r == 0) begin
-                    $readmemh("tests/tiny/input0.txt", input_r);
-                    $readmemh("tests/tiny/run0_stage0.txt", expected0_r);
-                    $readmemh("tests/tiny/run0_stage1.txt", expected1_r);
-                    $readmemh("tests/tiny/run0_stage2.txt", expected2_r);
-                    $readmemh("tests/tiny/run0_stage3.txt", expected3_r);
-                    $readmemh("tests/tiny/run0_stage4.txt", expected4_r);
-                    $readmemh("tests/tiny/run0_stage5.txt", expected5_r);
-                    $readmemh("tests/tiny/run0_stage6.txt", expected6_r);
+                    $readmemh({DATA_ROOT, "/tiny/input0.txt"}, input_r);
+                    $readmemh({DATA_ROOT, "/tiny/run0_stage0.txt"}, expected0_r);
+                    $readmemh({DATA_ROOT, "/tiny/run0_stage1.txt"}, expected1_r);
+                    $readmemh({DATA_ROOT, "/tiny/run0_stage2.txt"}, expected2_r);
+                    $readmemh({DATA_ROOT, "/tiny/run0_stage3.txt"}, expected3_r);
+                    $readmemh({DATA_ROOT, "/tiny/run0_stage4.txt"}, expected4_r);
+                    $readmemh({DATA_ROOT, "/tiny/run0_stage5.txt"}, expected5_r);
+                    $readmemh({DATA_ROOT, "/tiny/run0_stage6.txt"}, expected6_r);
                 end
                 else begin
-                    $readmemh("tests/tiny/input1.txt", input_r);
-                    $readmemh("tests/tiny/run1_stage0.txt", expected0_r);
-                    $readmemh("tests/tiny/run1_stage1.txt", expected1_r);
-                    $readmemh("tests/tiny/run1_stage2.txt", expected2_r);
-                    $readmemh("tests/tiny/run1_stage3.txt", expected3_r);
-                    $readmemh("tests/tiny/run1_stage4.txt", expected4_r);
-                    $readmemh("tests/tiny/run1_stage5.txt", expected5_r);
-                    $readmemh("tests/tiny/run1_stage6.txt", expected6_r);
+                    $readmemh({DATA_ROOT, "/tiny/input1.txt"}, input_r);
+                    $readmemh({DATA_ROOT, "/tiny/run1_stage0.txt"}, expected0_r);
+                    $readmemh({DATA_ROOT, "/tiny/run1_stage1.txt"}, expected1_r);
+                    $readmemh({DATA_ROOT, "/tiny/run1_stage2.txt"}, expected2_r);
+                    $readmemh({DATA_ROOT, "/tiny/run1_stage3.txt"}, expected3_r);
+                    $readmemh({DATA_ROOT, "/tiny/run1_stage4.txt"}, expected4_r);
+                    $readmemh({DATA_ROOT, "/tiny/run1_stage5.txt"}, expected5_r);
+                    $readmemh({DATA_ROOT, "/tiny/run1_stage6.txt"}, expected6_r);
                 end
     // Ping-pong RAM is reused; reload the image for each inference.
                 begin
@@ -358,7 +362,6 @@ Lenet5_Core #(
     //-------------------------------------//
     // Streaming Pipeline Coverage
     //-------------------------------------//
-    reg [31:0] in_flight_r=0, max_in_flight_r=0, burst_r=0, max_burst_r=0;
     always @(posedge clk_r) begin
         if (!rst_n_r) begin
             in_flight_r = 0;

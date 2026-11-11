@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../RTL/Adder_Tree_25.v" \
+"../../../../../RTL/Arbiter.v" \
+"../../../../../RTL/Bias_Memory.v" \
+"../../../../../RTL/Conv_Bank_5x5.v" \
+"../../../../../RTL/Conv_Controller.v" \
+"../../../../../RTL/FC_Controller.v" \
+"../../../../../RTL/Lenet5_Core.v" \
+"../../../../../RTL/Lenet5_Engine.v" \
+"../../../../../RTL/Line_Buffer_5x5.v" \
+"../../../../../RTL/Line_Buffer_Memory.v" \
+"../../../../../RTL/MaxPool2x2_Q16.v" \
+"../../../../../RTL/PEA_5x5.v" \
+"../../../../../RTL/PE_5x5.v" \
+"../../../../../RTL/Parallel_Data_Loader.v" \
+"../../../../../RTL/Partial_Sum_Memory.v" \
+"../../../../../RTL/Ping_Pong_Memory.v" \
+"../../../../../RTL/Pool_Controller.v" \
+"../../../../../RTL/Postprocess_Q16.v" \
+"../../../../../RTL/ReLU_Q16.v" \
+"../../../../../RTL/Sync_RAM_1R1W.v" \
+"../../../../../RTL/Weight_Memory.v" \
+"../../../../../tests/tb_Lenet5_Core.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

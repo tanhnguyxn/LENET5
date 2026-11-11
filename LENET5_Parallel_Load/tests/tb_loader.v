@@ -18,14 +18,14 @@ module tb_loader;
     Parallel_Data_Loader dut (
         .clk_i(clk_r), .rst_n_i(rst_n_r), .start_i(start_r),
         .input_enable_i(1'b1), .bias_enable_i(bias_enable_r),
-        .group_i(group_r), .outputs_i(outputs_r), .weight_base_i(base_r),
-        .weight_stride_i(stride_r), .input_base_i(input_base_r), .taps_i(taps_r),
+        .group_i(group_r), .outputs_i(outputs_r), .weight_mem_base_i(base_r),
+        .weight_mem_stride_i(stride_r), .input_base_i(input_base_r), .taps_i(taps_r),
         .done_o(done_w), .input_rd_en_o(xe_w), .input_rd_addr_o(xa_w),
         .input_rd_data_i(xd_r), .input_rd_valid_i(xv_r),
-        .weight_rd_en_o(we_w), .weight_rd_addr_o(wa_w),
-        .weight_rd_data_i(wd_r), .weight_rd_valid_i(wv_r),
-        .bias_rd_en_o(be_w), .bias_rd_addr_o(ba_w),
-        .bias_rd_data_i(bd_r), .bias_rd_valid_i(bv_r),
+        .weight_mem_rd_en_o(we_w), .weight_mem_rd_addr_o(wa_w),
+        .weight_mem_rd_data_i(wd_r), .weight_mem_rd_valid_i(wv_r),
+        .bias_mem_rd_en_o(be_w), .bias_mem_rd_addr_o(ba_w),
+        .bias_mem_rd_data_i(bd_r), .bias_mem_rd_valid_i(bv_r),
         .weights_o(weights_w), .inputs_o(inputs_w), .biases_o(biases_w)
     );
     always @(posedge clk_r) begin
