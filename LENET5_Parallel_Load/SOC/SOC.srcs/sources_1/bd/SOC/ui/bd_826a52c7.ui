@@ -1,12 +1,22 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.916667",
-   "Default View_TopLeft":"0,-396",
+   "Default View_ScaleFactor":"0.970329",
+   "Default View_TopLeft":"-10,-63",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-levelinfo -pg 1 0 10
-pagesize -pg 1 -db -bbox -sgen 0 0 10 10
+preplace inst LENET5_FIXED_CNN_IP_0 -pg 1 -lvl 3 -x 1070 -y 160 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 320 -y 90 -defaultsOSRD
+preplace inst ps8_0_axi_periph -pg 1 -lvl 2 -x 790 -y 140 -defaultsOSRD
+preplace inst rst_ps8_0_99M -pg 1 -lvl 1 -x 320 -y 300 -defaultsOSRD
+preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 1 2 640 300 950
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 3 10 200 630 290 940J
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 20 190 620
+preplace netloc ps8_0_axi_periph_M00_AXI 1 2 1 N 140
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 N 50
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 1 1 N 70
+levelinfo -pg 1 -10 320 790 1070 1190
+pagesize -pg 1 -db -bbox -sgen -10 -10 1190 400
 "
 }
 {

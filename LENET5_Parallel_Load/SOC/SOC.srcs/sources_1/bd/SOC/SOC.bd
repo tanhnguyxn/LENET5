@@ -1917,7 +1917,7 @@
               "SEG_LENET5_FIXED_CNN_IP_0_S00_AXI_reg": {
                 "address_block": "/LENET5_FIXED_CNN_IP_0/S00_AXI/S00_AXI_reg",
                 "offset": "0x00A0000000",
-                "range": "64K",
+                "range": "8M",
                 "offset_base_param": "C_S00_AXI_BASEADDR",
                 "offset_high_param": "C_S00_AXI_HIGHADDR"
               }

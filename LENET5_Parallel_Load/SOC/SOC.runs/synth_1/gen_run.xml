@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xck26-sfvc784-2LV-c" LaunchTime="1794324546">
+<GenRun Id="synth_1" LaunchPart="xck26-sfvc784-2LV-c" LaunchTime="1794388338" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/SOC_wrapper.dcp">
   <File Type="PA-TCL" Name="SOC_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="SOC_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="SOC_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="SOC_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="SOC_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="SOC_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="SOC_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="SOC_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="SOC_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/SOC/SOC.bd">
@@ -36,6 +39,14 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/SOC_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>

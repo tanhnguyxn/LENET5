@@ -10,19 +10,25 @@
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source SOC_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1002.512 ; gain = 117.395
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.cache/ip 
+Command: read_checkpoint -auto_incremental -incremental C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.srcs/utils_1/imports/synth_1/SOC_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.srcs/utils_1/imports/synth_1/SOC_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top SOC_wrapper -part xck26-sfvc784-2LV-c
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
 INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16628
+INFO: [Synth 8-7075] Helper process launched with PID 14552
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 WARNING: [Synth 8-6901] identifier 'loader_started_r' is used before its declaration [c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/FC_Controller.v:195]
 WARNING: [Synth 8-6901] identifier 'loader_done_w' is used before its declaration [c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/FC_Controller.v:195]
@@ -36,9 +42,9 @@ WARNING: [Synth 8-11065] parameter 'FC2_NEURONS' becomes localparam in 'LENET5_F
 WARNING: [Synth 8-11065] parameter 'HOST_DATA_WIDTH' becomes localparam in 'LENET5_FIXED_CNN_IP_v1_0_S00_AXI' with formal parameter declaration list [c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ipshared/fdc4/hdl/LENET5_FIXED_CNN_IP_v1_0_S00_AXI.v:409]
 INFO: [Synth 8-11241] undeclared symbol 'dp_audi_ref_clk', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:2470]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2406.070 ; gain = 332.488
+Starting RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2407.836 ; gain = 333.043
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'SOC_wrapper' [c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/hdl/SOC_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'SOC_wrapper' [C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/hdl/SOC_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'SOC' [c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/synth/SOC.v:12]
 INFO: [Synth 8-6157] synthesizing module 'SOC_LENET5_FIXED_CNN_IP_0_0' [c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_LENET5_FIXED_CNN_IP_0_0/synth/SOC_LENET5_FIXED_CNN_IP_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'LENET5_FIXED_CNN_IP_v1_0' [c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ipshared/fdc4/hdl/LENET5_FIXED_CNN_IP_v1_0.v:4]
@@ -495,18 +501,18 @@ WARNING: [Synth 8-7129] Port test_adc2_in[8] in module zynq_ultra_ps_e_v3_4_1_zy
 WARNING: [Synth 8-7129] Port test_adc2_in[7] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2711.855 ; gain = 638.273
+Finished RTL Elaboration : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 2714.359 ; gain = 639.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2711.855 ; gain = 638.273
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 2714.359 ; gain = 639.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2711.855 ; gain = 638.273
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 2714.359 ; gain = 639.566
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.389 . Memory (MB): peak = 2711.855 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2714.359 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -514,6 +520,7 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_zynq_ultra_ps_e_0_0/SOC_zynq_ultra_ps_e_0_0.xdc] for cell 'SOC_i/zynq_ultra_ps_e_0/inst'
+create_clock: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2843.465 ; gain = 26.543
 Finished Parsing XDC File [c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_zynq_ultra_ps_e_0_0/SOC_zynq_ultra_ps_e_0_0.xdc] for cell 'SOC_i/zynq_ultra_ps_e_0/inst'
 Parsing XDC File [c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_rst_ps8_0_99M_0/SOC_rst_ps8_0_99M_0_board.xdc] for cell 'SOC_i/rst_ps8_0_99M/U0'
 Finished Parsing XDC File [c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_rst_ps8_0_99M_0/SOC_rst_ps8_0_99M_0_board.xdc] for cell 'SOC_i/rst_ps8_0_99M/U0'
@@ -526,16 +533,18 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/SOC_wrapper_
 INFO: [Project 1-1714] 6 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2840.793 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2843.465 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 13 instances were transformed.
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 2840.793 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.451 . Memory (MB): peak = 2843.465 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2840.793 ; gain = 767.211
+Finished Constraint Validation : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 2843.465 ; gain = 768.672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -543,16 +552,16 @@ Start Loading Part and Timing Information
 Loading part: xck26-sfvc784-2LV-c
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2840.793 ; gain = 767.211
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 2843.465 ; gain = 768.672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for SOC_i/zynq_ultra_ps_e_0/inst/PS8_i. (constraint file  c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_zynq_ultra_ps_e_0_0/SOC_zynq_ultra_ps_e_0_0.xdc, line 26).
 Applied set_property KEEP_HIERARCHY = SOFT for SOC_i/zynq_ultra_ps_e_0/inst. (constraint file  C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.runs/synth_1/dont_touch.xdc, line 37).
-Applied set_property KEEP_HIERARCHY = SOFT for SOC_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst. (constraint file  C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.runs/synth_1/dont_touch.xdc, line 42).
-Applied set_property KEEP_HIERARCHY = SOFT for SOC_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst. (constraint file  C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.runs/synth_1/dont_touch.xdc, line 49).
-Applied set_property KEEP_HIERARCHY = SOFT for SOC_i/rst_ps8_0_99M/U0. (constraint file  C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.runs/synth_1/dont_touch.xdc, line 56).
+Applied set_property KEEP_HIERARCHY = SOFT for SOC_i/rst_ps8_0_99M/U0. (constraint file  C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.runs/synth_1/dont_touch.xdc, line 42).
+Applied set_property KEEP_HIERARCHY = SOFT for SOC_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst. (constraint file  C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.runs/synth_1/dont_touch.xdc, line 48).
+Applied set_property KEEP_HIERARCHY = SOFT for SOC_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst. (constraint file  C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.runs/synth_1/dont_touch.xdc, line 55).
 Applied set_property KEEP_HIERARCHY = SOFT for SOC_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for SOC_i/LENET5_FIXED_CNN_IP_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for SOC_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
@@ -570,7 +579,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for SOC_i/ps8_0_axi_periph/s01_couple
 Applied set_property KEEP_HIERARCHY = SOFT for SOC_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst /\USE_WRITE.write_addr_inst /cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for SOC_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst /\USE_READ.read_addr_inst /cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2840.793 ; gain = 767.211
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 2843.465 ; gain = 768.672
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_r_reg' in module 'Conv_Controller'
 INFO: [Synth 8-802] inferred FSM for state register 'state_r_reg' in module 'FC_Controller'
@@ -643,7 +652,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2840.793 ; gain = 767.211
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:48 ; elapsed = 00:01:55 . Memory (MB): peak = 2843.465 ; gain = 768.672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -921,7 +930,7 @@ WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused a
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 2875.426 ; gain = 801.844
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:11 ; elapsed = 00:04:23 . Memory (MB): peak = 2871.602 ; gain = 796.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1021,7 +1030,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:21 ; elapsed = 00:01:25 . Memory (MB): peak = 4201.645 ; gain = 2128.062
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:42 ; elapsed = 00:04:58 . Memory (MB): peak = 4194.879 ; gain = 2120.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -1044,7 +1053,7 @@ INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 4
 INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 2 for RAM "SOC_i/LENET5_FIXED_CNN_IP_0/u_enginei_2/\inst/LENET5_FIXED_CNN_IP_v1_0_S00_AXI_inst/Core/u_engine/u_weight_memory /u_layer_2/mem_r_reg"
 INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "SOC_i/LENET5_FIXED_CNN_IP_0/u_enginei_2/\inst/LENET5_FIXED_CNN_IP_v1_0_S00_AXI_inst/Core/u_engine/u_weight_memory /u_layer_2/mem_r_reg"
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 4377.875 ; gain = 2304.293
+Finished Timing Optimization : Time (s): cpu = 00:04:58 ; elapsed = 00:05:14 . Memory (MB): peak = 4354.617 ; gain = 2279.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1125,7 +1134,7 @@ INFO: [Synth 8-7052] The timing for the instance SOC_i/LENET5_FIXED_CNN_IP_0/ins
 INFO: [Synth 8-7052] The timing for the instance SOC_i/LENET5_FIXED_CNN_IP_0/inst/LENET5_FIXED_CNN_IP_v1_0_S00_AXI_inst/Core/u_engine/u_bias_memory/u_layer_3/mem_r_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance SOC_i/LENET5_FIXED_CNN_IP_0/inst/LENET5_FIXED_CNN_IP_v1_0_S00_AXI_inst/Core/u_engine/u_bias_memory/u_layer_4/mem_r_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:35 ; elapsed = 00:01:39 . Memory (MB): peak = 4416.184 ; gain = 2342.602
+Finished Technology Mapping : Time (s): cpu = 00:05:25 ; elapsed = 00:05:42 . Memory (MB): peak = 4410.547 ; gain = 2335.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1345,37 +1354,37 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:39 ; elapsed = 00:01:43 . Memory (MB): peak = 4431.699 ; gain = 2358.117
+Finished IO Insertion : Time (s): cpu = 00:05:37 ; elapsed = 00:05:55 . Memory (MB): peak = 4411.137 ; gain = 2336.344
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:39 ; elapsed = 00:01:43 . Memory (MB): peak = 4431.699 ; gain = 2358.117
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:37 ; elapsed = 00:05:55 . Memory (MB): peak = 4411.137 ; gain = 2336.344
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 4431.699 ; gain = 2358.117
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:50 ; elapsed = 00:06:08 . Memory (MB): peak = 4411.137 ; gain = 2336.344
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 4431.699 ; gain = 2358.117
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:51 ; elapsed = 00:06:09 . Memory (MB): peak = 4411.137 ; gain = 2336.344
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:44 ; elapsed = 00:01:48 . Memory (MB): peak = 4431.699 ; gain = 2358.117
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:54 ; elapsed = 00:06:12 . Memory (MB): peak = 4411.137 ; gain = 2336.344
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:44 ; elapsed = 00:01:48 . Memory (MB): peak = 4431.699 ; gain = 2358.117
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:55 ; elapsed = 00:06:13 . Memory (MB): peak = 4411.137 ; gain = 2336.344
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1538,12 +1547,12 @@ Report Cell Usage:
 |10    |DSP_OUTPUT      |   113|
 |12    |DSP_PREADD      |   113|
 |13    |DSP_PREADD_DATA |   113|
-|15    |LUT1            |   427|
-|16    |LUT2            |  4579|
+|15    |LUT1            |   428|
+|16    |LUT2            |  4581|
 |17    |LUT3            |  3459|
-|18    |LUT4            |  2730|
-|19    |LUT5            |  4175|
-|20    |LUT6            |  1698|
+|18    |LUT4            |  2729|
+|19    |LUT5            |  4174|
+|20    |LUT6            |  1696|
 |21    |MUXF7           |    21|
 |22    |PS8             |     1|
 |23    |RAM16X1S        |   128|
@@ -1561,18 +1570,18 @@ Report Cell Usage:
 |54    |FDSE            |    88|
 +------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:44 ; elapsed = 00:01:49 . Memory (MB): peak = 4431.699 ; gain = 2358.117
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:55 ; elapsed = 00:06:13 . Memory (MB): peak = 4411.137 ; gain = 2336.344
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1627 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:26 ; elapsed = 00:01:41 . Memory (MB): peak = 4431.699 ; gain = 2229.180
-Synthesis Optimization Complete : Time (s): cpu = 00:01:44 ; elapsed = 00:01:49 . Memory (MB): peak = 4431.699 ; gain = 2358.117
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:28 ; elapsed = 00:05:37 . Memory (MB): peak = 4411.137 ; gain = 2207.238
+Synthesis Optimization Complete : Time (s): cpu = 00:05:55 ; elapsed = 00:06:14 . Memory (MB): peak = 4411.137 ; gain = 2336.344
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.445 . Memory (MB): peak = 4457.883 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4425.359 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 889 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 4570.535 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 4560.559 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 260 instances were transformed.
   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 113 instances
@@ -1582,11 +1591,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
   SRL16 => SRL16E: 1 instance 
 
-Synth Design complete, checksum: 7c168ff8
+Synth Design complete, checksum: 479d4e33
 INFO: [Common 17-83] Releasing license: Synthesis
-379 Infos, 428 Warnings, 0 Critical Warnings and 0 Errors encountered.
+385 Infos, 428 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:56 ; elapsed = 00:02:01 . Memory (MB): peak = 4570.535 ; gain = 3497.176
+synth_design: Time (s): cpu = 00:06:31 ; elapsed = 00:06:53 . Memory (MB): peak = 4560.559 ; gain = 3485.891
 INFO: [Common 17-1381] The checkpoint 'C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.runs/synth_1/SOC_wrapper.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 4560.559 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file SOC_wrapper_utilization_synth.rpt -pb SOC_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 10 22:31:24 2026...
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 11 16:20:02 2026...

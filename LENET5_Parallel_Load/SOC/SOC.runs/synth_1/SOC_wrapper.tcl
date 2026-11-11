@@ -70,7 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_msg_config -id {HDL-1065} -limit 10000
+set_param chipscope.maxJobs 4
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xck26-sfvc784-2LV-c
 
@@ -90,11 +90,13 @@ set_property ip_output_repo c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/hdl/SOC_wrapper.v
+read_verilog -library xil_defaultlib C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/hdl/SOC_wrapper.v
 add_files C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.srcs/sources_1/bd/SOC/SOC.bd
 set_property used_in_implementation false [get_files -all c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_zynq_ultra_ps_e_0_0/SOC_zynq_ultra_ps_e_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_zynq_ultra_ps_e_0_0/SOC_zynq_ultra_ps_e_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_xbar_0/SOC_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_rst_ps8_0_99M_0/SOC_rst_ps8_0_99M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_rst_ps8_0_99M_0/SOC_rst_ps8_0_99M_0.xdc]
 set_property used_in_synthesis false [get_files -all c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_auto_ds_0/SOC_auto_ds_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_auto_ds_0/SOC_auto_ds_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_auto_ds_0/SOC_auto_ds_0_ooc.xdc]
@@ -103,8 +105,6 @@ set_property used_in_synthesis false [get_files -all c:/SOC/SOC_UIT/LENET5/LENET
 set_property used_in_implementation false [get_files -all c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_auto_ds_1/SOC_auto_ds_1_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_auto_ds_1/SOC_auto_ds_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_auto_pc_1/SOC_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_rst_ps8_0_99M_0/SOC_rst_ps8_0_99M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_rst_ps8_0_99M_0/SOC_rst_ps8_0_99M_0.xdc]
 set_property used_in_implementation false [get_files -all c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/SOC_ooc.xdc]
 
 OPTRACE "Adding files" END { }
@@ -119,6 +119,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.srcs/utils_1/imports/synth_1/SOC_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

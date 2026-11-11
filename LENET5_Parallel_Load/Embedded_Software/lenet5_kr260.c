@@ -68,7 +68,7 @@ static unsigned predict(volatile uint64_t *regs, const uint16_t image[784],
 }
 
 // Set this once to the IP base address in Vivado Address Editor.
-#define LENET5_BASE 0x0ULL
+#define LENET5_BASE 0xA0000000ULL
 #define HEX_DIR "../train_model/outputs_q88"
 
 int main(void) {

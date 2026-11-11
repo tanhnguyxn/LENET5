@@ -78,7 +78,7 @@ SOC_xbar_0_sc::SOC_xbar_0_sc(const sc_core::sc_module_name& nm) : sc_core::sc_mo
     model_param_props.addLong("C_CONNECTIVITY_MODE", "0");
     model_param_props.addString("C_FAMILY", "zynquplus");
     model_param_props.addBitString("C_M_AXI_BASE_ADDR", "0000000000000000000000000000000010100000000000000000000000000000", 64);
-    model_param_props.addBitString("C_M_AXI_ADDR_WIDTH", "00000000000000000000000000010000", 32);
+    model_param_props.addBitString("C_M_AXI_ADDR_WIDTH", "00000000000000000000000000010111", 32);
     model_param_props.addBitString("C_S_AXI_BASE_ID", "0000000000000000000000000000000100000000000000000000000000000000", 64);
     model_param_props.addBitString("C_S_AXI_THREAD_ID_WIDTH", "0000000000000000000000000000000000000000000000000000000000000000", 64);
     model_param_props.addBitString("C_M_AXI_WRITE_CONNECTIVITY", "00000000000000000000000000000011", 32);
