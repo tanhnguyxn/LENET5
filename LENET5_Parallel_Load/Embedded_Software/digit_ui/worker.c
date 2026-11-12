@@ -25,11 +25,27 @@ int main(void) {
     while (fread(gray, 1, sizeof gray, stdin) == sizeof gray) {
         for (unsigned i = 0; i < 784; ++i)
             image[i] = (gray[i] * 256u + 127u) / 255u;
-        unsigned digit = predict(regs, image, logits, &score);
+        if (regs[0] & 1) fail("Core busy");
+        double begin = seconds();
+        for (unsigned i = 0; i < 784; ++i) regs[0x10000+i] = image[i];
+        __sync_synchronize();
+        double loaded = seconds();
+        regs[0] = 1;
+        __sync_synchronize();
+        while ((regs[0] & 3) != 2)
+            if (seconds() - loaded > 2.0) fail("Timeout waiting for DONE");
+        double done = seconds();
+        for (unsigned i = 0; i < 10; ++i) logits[i] = (uint16_t)regs[0x90000+i];
+        uint64_t result = regs[0x80000];
+        __sync_synchronize();
+        double end = seconds();
+        score = (uint16_t)result;
+        unsigned digit = (unsigned)((result >> 16) & 15);
         if (digit > 9 || score != logits[digit]) fail("Invalid FPGA prediction");
         printf("%u", digit);
         for (unsigned i = 0; i < 10; ++i) printf(" %d", signed16(logits[i]));
-        putchar('\n');
+        printf(" %.3f %.3f %.3f %.3f\n", (loaded-begin)*1e6,
+               (done-loaded)*1e6, (end-done)*1e6, (end-begin)*1e6);
         fflush(stdout);
     }
     munmap(map, MAP_BYTES);

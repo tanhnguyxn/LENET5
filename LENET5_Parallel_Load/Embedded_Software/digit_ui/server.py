@@ -38,10 +38,10 @@ class Handler(BaseHTTPRequestHandler):
             with lock:
                 worker.stdin.write(pixels)
                 worker.stdin.flush()
-                values = list(map(int, worker.stdout.readline().split()))
-                if len(values) != 11:
+                values = worker.stdout.readline().split()
+                if len(values) != 15:
                     raise ValueError("Missing FPGA response")
-            data = json.dumps(dict(digit=values[0], logits=values[1:])).encode()
+            data = json.dumps(dict(digit=int(values[0]), logits=list(map(int, values[1:11])), timing_us=list(map(float, values[11:])))).encode()
             self.reply(200, "application/json", data)
         except (ValueError, BrokenPipeError):
             self.send_error(503, "FPGA worker unavailable; check board terminal")
