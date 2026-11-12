@@ -1,0 +1,64 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nhận diện chữ số · KR260</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f4ec;color:#18332d;font:16px system-ui,sans-serif}main{max-width:860px;margin:6vh auto;padding:24px}
+header{border-bottom:2px solid #18332d;padding-bottom:18px}small{font:600 13px monospace;letter-spacing:.08em}h1{font-size:clamp(30px,6vw,54px);letter-spacing:-.05em;margin:8px 0}p{line-height:1.5}section{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;margin-top:24px}#pad{width:100%;height:auto;display:block;border-radius:14px;touch-action:none;cursor:crosshair;background:black}
+button{font:inherit;padding:11px 17px;margin:12px 6px 0 0;border:1px solid #18332d;border-radius:8px;background:transparent;color:inherit;cursor:pointer}#send{background:#18332d;color:white}button:disabled{opacity:.45;cursor:default}#preview{width:112px;height:112px;image-rendering:pixelated;background:black;border-radius:6px}h2{font-size:17px}output{display:block;font-size:72px;font-weight:700;line-height:1.1}#status{min-height:24px}aside{padding-left:20px;border-left:1px solid #bcc8be} @media(max-width:600px){section{grid-template-columns:1fr}aside{padding:0;border:0}main{margin:0 auto}}
+</style><main><header><small>KR260 / LeNet-5</small><h1>Nhận diện chữ số</h1></header>
+<section><div><p>Vẽ một chữ số từ 0 đến 9 bằng chuột hoặc ngón tay.</p>
+<canvas id="pad" width="280" height="280" aria-label="Bảng vẽ chữ số"></canvas>
+<button id="send" disabled>Nhận diện</button><button id="clear">Xóa bảng</button></div>
+<aside><h2>Ảnh gửi xuống FPGA</h2><canvas id="preview" width="28" height="28"></canvas> <small>28 × 28 px</small>
+<h2>Chữ số dự đoán</h2><output id="digit">—</output><p id="status" role="status"></p></aside></section></main>
+<script>
+const byId=id=>document.getElementById(id);
+const pad=byId("pad"), ctx=pad.getContext("2d",{willReadFrequently:true});
+const thumb=byId("preview").getContext("2d",{willReadFrequently:true});
+const send=byId("send"),clear=byId("clear"),digit=byId("digit"),statusLine=byId("status");
+let stroke=null,busy=false,pixels=new Uint8Array(784);
+function normalize(){
+  const data=ctx.getImageData(0,0,280,280).data;
+  let left=280,top=280,right=-1,bottom=-1,mass=0,mx=0,my=0;
+  for(let y=0;y<280;y++)for(let x=0;x<280;x++){
+    const v=data[(y*280+x)*4];if(!v)continue;
+    left=Math.min(left,x);right=Math.max(right,x);top=Math.min(top,y);bottom=Math.max(bottom,y);
+    mass+=v;mx+=(x+0.5)*v;my+=(y+0.5)*v;
+  }
+  thumb.fillStyle="black";thumb.fillRect(0,0,28,28);
+  if(mass){
+    const w=right-left+1,h=bottom-top+1,s=20/Math.max(w,h);
+    const dx=Math.min(28-w*s,Math.max(0,14-(mx/mass-left)*s));
+    const dy=Math.min(28-h*s,Math.max(0,14-(my/mass-top)*s));
+    thumb.imageSmoothingQuality="high";thumb.drawImage(pad,left,top,w,h,dx,dy,w*s,h*s);
+  }
+  const a=thumb.getImageData(0,0,28,28).data;
+  for(let i=0;i<784;i++)pixels[i]=a[i*4];
+  send.disabled=busy||!mass;
+}
+function point(e){const r=pad.getBoundingClientRect();return [(e.clientX-r.left)*280/r.width,(e.clientY-r.top)*280/r.height]}
+function reset(){ctx.fillStyle="black";ctx.fillRect(0,0,280,280);digit.textContent="—";statusLine.textContent="";normalize()}
+clear.onclick=reset;reset();
+pad.onpointerdown=e=>{
+  if(busy||stroke||e.button!==0)return;
+  pad.setPointerCapture(e.pointerId);let [x,y]=point(e);stroke={id:e.pointerId,x,y};
+  ctx.fillStyle="white";ctx.beginPath();ctx.arc(x,y,9,0,2*Math.PI);ctx.fill();
+  digit.textContent="—";statusLine.textContent="";normalize();
+};
+pad.onpointermove=e=>{
+  if(!stroke||stroke.id!==e.pointerId)return;let [x,y]=point(e);
+  ctx.strokeStyle="white";ctx.lineWidth=18;ctx.lineCap="round";
+  ctx.beginPath();ctx.moveTo(stroke.x,stroke.y);ctx.lineTo(x,y);ctx.stroke();
+  stroke.x=x;stroke.y=y;normalize();
+};
+pad.onlostpointercapture=()=>{stroke=null};
+send.onclick=async()=>{
+  busy=true;send.disabled=true;clear.disabled=true;statusLine.textContent="Đang chờ KR260…";digit.textContent="—";
+  try{
+    const res=await fetch("/predict",{method:"POST",headers:{"Content-Type":"application/octet-stream"},body:pixels});
+    if(!res.ok)throw Error(res.status);
+    const out=await res.json();digit.textContent=out.digit;
+    statusLine.textContent="Điểm Q8.8: "+(out.logits[out.digit]/256).toFixed(4);
+  }catch(e){statusLine.textContent="Không nhận được kết quả. Kiểm tra terminal của board."}
+  finally{busy=false;clear.disabled=false;normalize()}
+};
+</script></html>
