@@ -4,7 +4,7 @@
     "xci_name": "SOC_LENET5_FIXED_CNN_IP_0_0",
     "cell_name": "LENET5_FIXED_CNN_IP_0",
     "component_reference": "xilinx.com:user:LENET5_FIXED_CNN_IP:1.0",
-    "ip_revision": "4",
+    "ip_revision": "8",
     "gen_directory": "../../../../../../SOC.gen/sources_1/bd/SOC/ip/SOC_LENET5_FIXED_CNN_IP_0_0",
     "parameters": {
       "component_parameters": {
@@ -35,7 +35,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "4" } ],
+        "IPREVISION": [ { "value": "8" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../SOC.gen/sources_1/bd/SOC/ip/SOC_LENET5_FIXED_CNN_IP_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

@@ -409,12 +409,12 @@
     parameter HOST_DATA_WIDTH = 64;
 	
     wire                			w_addr_valid_i_w;
-    wire  [31:0]        			w_data_i_w;
-    wire  [HOST_DATA_WIDTH-1:0]       w_addr_i_w;
+    wire  [HOST_DATA_WIDTH - 1:0]   w_data_i_w;
+    wire  [19:0]                    w_addr_i_w;
 
     wire                			r_addr_valid_i_w;
-    wire  [HOST_DATA_WIDTH-1:0]       r_addr_i_w;
-    wire [31:0]         			r_data_o_w;
+    wire  [19:0]                    r_addr_i_w;
+    wire [HOST_DATA_WIDTH - 1:0]    r_data_o_w;
 	
 	assign w_addr_valid_i_w 		= slv_reg_wren;
 	assign w_data_i_w				= S_AXI_WDATA;
@@ -428,7 +428,22 @@
 		axi_rdata = r_data_o_w;
 	end 
 
-	
+    
+    
+        //-------------------------------------//
+    //          Host Interface ILA         //
+    //-------------------------------------//
+    ila_0 u_ila_lenet_host (
+        .clk    (S_AXI_ACLK),
+        .probe0 (w_addr_valid_i_w),
+        .probe1 (w_addr_i_w),
+        .probe2 (w_data_i_w),
+        .probe3 (r_addr_valid_i_w),
+        .probe4 (r_addr_i_w),
+        .probe5 (r_data_o_w),
+        .probe6 ({S_AXI_RVALID, S_AXI_RREADY}),
+        .probe7 (S_AXI_WSTRB)
+    );
 	
 	Lenet5_Core #(
 		.DATA_WIDTH (DATA_WIDTH),
