@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.runs/impl_1/SOC_wrapper.tcl"
+  variable script "C:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.runs/impl_1/SOC_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,6 +115,7 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {HDL-1065} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -130,19 +131,19 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.cache/wt [current_project]
-  set_property parent.project_path C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.xpr [current_project]
-  set_property ip_repo_paths C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/ip_repo [current_project]
+  set_property webtalk.parent_dir C:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.cache/wt [current_project]
+  set_property parent.project_path C:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.xpr [current_project]
+  set_property ip_repo_paths C:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/ip_repo [current_project]
   update_ip_catalog
-  set_property ip_output_repo C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.cache/ip [current_project]
+  set_property ip_output_repo C:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.runs/synth_1/SOC_wrapper.dcp
+  add_files -quiet C:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.runs/synth_1/SOC_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.srcs/sources_1/bd/SOC/SOC.bd
+  add_files C:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.srcs/sources_1/bd/SOC/SOC.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
 OPTRACE "read constraints: implementation" END { }

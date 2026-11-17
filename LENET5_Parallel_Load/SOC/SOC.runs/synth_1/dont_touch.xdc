@@ -7,6 +7,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SOC || ORIG
 # IP: bd/SOC/ip/SOC_LENET5_FIXED_CNN_IP_0_0/SOC_LENET5_FIXED_CNN_IP_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SOC_LENET5_FIXED_CNN_IP_0_0 || ORIG_REF_NAME==SOC_LENET5_FIXED_CNN_IP_0_0} -quiet] -quiet
 
+# IP: c:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_LENET5_FIXED_CNN_IP_0_0/src/ila_0/ila_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ila_0 || ORIG_REF_NAME==ila_0} -quiet] -quiet
+
 # IP: bd/SOC/ip/SOC_zynq_ultra_ps_e_0_0/SOC_zynq_ultra_ps_e_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SOC_zynq_ultra_ps_e_0_0 || ORIG_REF_NAME==SOC_zynq_ultra_ps_e_0_0} -quiet] -quiet
 
@@ -31,31 +34,36 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SOC_auto_ds
 # IP: bd/SOC/ip/SOC_auto_pc_1/SOC_auto_pc_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SOC_auto_pc_1 || ORIG_REF_NAME==SOC_auto_pc_1} -quiet] -quiet
 
-# XDC: c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_zynq_ultra_ps_e_0_0/SOC_zynq_ultra_ps_e_0_0_ooc.xdc
+# XDC: c:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_LENET5_FIXED_CNN_IP_0_0/src/ila_0/ila_v6_2/constraints/ila.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ila_0 || ORIG_REF_NAME==ila_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_zynq_ultra_ps_e_0_0/SOC_zynq_ultra_ps_e_0_0.xdc
+# XDC: c:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_LENET5_FIXED_CNN_IP_0_0/src/ila_0/ila_0_ooc.xdc
+
+# XDC: c:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_zynq_ultra_ps_e_0_0/SOC_zynq_ultra_ps_e_0_0_ooc.xdc
+
+# XDC: c:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_zynq_ultra_ps_e_0_0/SOC_zynq_ultra_ps_e_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==SOC_zynq_ultra_ps_e_0_0 || ORIG_REF_NAME==SOC_zynq_ultra_ps_e_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_xbar_0/SOC_xbar_0_ooc.xdc
+# XDC: c:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_xbar_0/SOC_xbar_0_ooc.xdc
 
-# XDC: c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_rst_ps8_0_99M_0/SOC_rst_ps8_0_99M_0_board.xdc
+# XDC: c:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_rst_ps8_0_99M_0/SOC_rst_ps8_0_99M_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==SOC_rst_ps8_0_99M_0 || ORIG_REF_NAME==SOC_rst_ps8_0_99M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_rst_ps8_0_99M_0/SOC_rst_ps8_0_99M_0.xdc
+# XDC: c:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_rst_ps8_0_99M_0/SOC_rst_ps8_0_99M_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==SOC_rst_ps8_0_99M_0 || ORIG_REF_NAME==SOC_rst_ps8_0_99M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_auto_ds_0/SOC_auto_ds_0_clocks.xdc
+# XDC: c:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_auto_ds_0/SOC_auto_ds_0_clocks.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==SOC_auto_ds_0 || ORIG_REF_NAME==SOC_auto_ds_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_auto_ds_0/SOC_auto_ds_0_ooc.xdc
+# XDC: c:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_auto_ds_0/SOC_auto_ds_0_ooc.xdc
 
-# XDC: c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_auto_pc_0/SOC_auto_pc_0_ooc.xdc
+# XDC: c:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_auto_pc_0/SOC_auto_pc_0_ooc.xdc
 
-# XDC: c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_auto_ds_1/SOC_auto_ds_1_clocks.xdc
+# XDC: c:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_auto_ds_1/SOC_auto_ds_1_clocks.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==SOC_auto_ds_1 || ORIG_REF_NAME==SOC_auto_ds_1} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_auto_ds_1/SOC_auto_ds_1_ooc.xdc
+# XDC: c:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_auto_ds_1/SOC_auto_ds_1_ooc.xdc
 
-# XDC: c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_auto_pc_1/SOC_auto_pc_1_ooc.xdc
+# XDC: c:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/ip/SOC_auto_pc_1/SOC_auto_pc_1_ooc.xdc
 
-# XDC: c:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/SOC_ooc.xdc
+# XDC: c:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.gen/sources_1/bd/SOC/SOC_ooc.xdc

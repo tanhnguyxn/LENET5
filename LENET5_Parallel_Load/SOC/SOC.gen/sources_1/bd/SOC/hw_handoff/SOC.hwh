@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Nov 11 16:12:14 2026" VIVADOVERSION="2022.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov 17 16:37:33 2026" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:kr260_som:part0:1.1" DEVICE="xck26" NAME="SOC" PACKAGE="sfvc784" SPEEDGRADE="-2LV"/>
 
@@ -8,7 +8,7 @@
   <EXTERNALINTERFACES/>
 
   <MODULES>
-    <MODULE COREREVISION="4" FULLNAME="/LENET5_FIXED_CNN_IP_0" HWVERSION="1.0" INSTANCE="LENET5_FIXED_CNN_IP_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="LENET5_FIXED_CNN_IP" VLNV="xilinx.com:user:LENET5_FIXED_CNN_IP:1.0">
+    <MODULE COREREVISION="8" FULLNAME="/LENET5_FIXED_CNN_IP_0" HWVERSION="1.0" INSTANCE="LENET5_FIXED_CNN_IP_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="LENET5_FIXED_CNN_IP" VLNV="xilinx.com:user:LENET5_FIXED_CNN_IP:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_reg" RANGE="4096" USAGE="register"/>
@@ -934,12 +934,12 @@
             <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_awprot"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_awvalid">
+        <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_awvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_awready">
+        <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_awready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_awready"/>
           </CONNECTIONS>
@@ -954,12 +954,12 @@
             <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_wvalid">
+        <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_wvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_wready">
+        <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_wready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_wready"/>
           </CONNECTIONS>
@@ -969,12 +969,12 @@
             <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_bvalid">
+        <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_bvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_bready">
+        <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_bready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_bready"/>
           </CONNECTIONS>
@@ -989,12 +989,12 @@
             <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_arprot"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_arvalid">
+        <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_arready">
+        <PORT DIR="I" NAME="M00_AXI_arready" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_arready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_arready"/>
           </CONNECTIONS>
@@ -1009,12 +1009,12 @@
             <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_rvalid">
+        <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_rvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_rready">
+        <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef" SIGNAME="LENET5_FIXED_CNN_IP_0_s00_axi_rready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_rready"/>
           </CONNECTIONS>
@@ -1172,10 +1172,10 @@
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="rst" SIGNAME="rst_ps8_0_99M_peripheral_aresetn">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S00_ARESETN"/>
-            <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_aresetn"/>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="M00_ARESETN"/>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="ARESETN"/>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S01_ARESETN"/>
+            <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -3311,11 +3311,11 @@
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxihpm0_fpd_aclk"/>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="rst_ps8_0_99M" PORT="slowest_sync_clk"/>
-            <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_aclk"/>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="M00_ACLK"/>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="ACLK"/>
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxihpm1_fpd_aclk"/>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S01_ACLK"/>
+            <CONNECTION INSTANCE="LENET5_FIXED_CNN_IP_0" PORT="s00_axi_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="99999001" DIR="O" NAME="pl_clk1" SIGIS="clk"/>

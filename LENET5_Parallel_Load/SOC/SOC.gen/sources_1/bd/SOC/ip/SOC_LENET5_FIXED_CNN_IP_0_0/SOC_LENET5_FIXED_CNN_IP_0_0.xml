@@ -599,11 +599,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 10 15:26:04 UTC 2026</spirit:value>
+            <spirit:value>Tue Nov 17 09:37:03 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fbc6cdaf</spirit:value>
+            <spirit:value>9:000593ee</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -614,7 +614,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fbc6cdaf</spirit:value>
+            <spirit:value>9:000593ee</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -630,11 +630,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 10 15:26:04 UTC 2026</spirit:value>
+            <spirit:value>Tue Nov 17 09:37:03 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fbc6cdaf</spirit:value>
+            <spirit:value>9:000593ee</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -650,11 +650,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 10 15:26:04 UTC 2026</spirit:value>
+            <spirit:value>Tue Nov 17 09:37:03 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ead095a0</spirit:value>
+            <spirit:value>9:1113cbe1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -670,11 +670,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 10 15:26:04 UTC 2026</spirit:value>
+            <spirit:value>Tue Nov 17 09:37:03 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ead095a0</spirit:value>
+            <spirit:value>9:1113cbe1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -688,11 +688,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 10 15:26:04 UTC 2026</spirit:value>
+            <spirit:value>Tue Nov 17 09:37:03 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fbc6cdaf</spirit:value>
+            <spirit:value>9:000593ee</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1048,95 +1048,99 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Adder_Tree_25.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Adder_Tree_25.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Arbiter.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Arbiter.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Bias_Memory.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Bias_Memory.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Conv_Bank_5x5.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Conv_Bank_5x5.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Conv_Controller.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Conv_Controller.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/FC_Controller.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/FC_Controller.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/hdl/LENET5_FIXED_CNN_IP_v1_0_S00_AXI.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/hdl/LENET5_FIXED_CNN_IP_v1_0_S00_AXI.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Lenet5_Core.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Lenet5_Core.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Lenet5_Engine.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Lenet5_Engine.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Line_Buffer_5x5.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Line_Buffer_5x5.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Line_Buffer_Memory.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Line_Buffer_Memory.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/MaxPool2x2_Q16.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/MaxPool2x2_Q16.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/PEA_5x5.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/PEA_5x5.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/PE_5x5.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/PE_5x5.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Parallel_Data_Loader.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Parallel_Data_Loader.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Partial_Sum_Memory.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Partial_Sum_Memory.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Ping_Pong_Memory.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Ping_Pong_Memory.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Pool_Controller.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Pool_Controller.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Postprocess_Q16.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Postprocess_Q16.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/ReLU_Q16.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/ReLU_Q16.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Sync_RAM_1R1W.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Sync_RAM_1R1W.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Weight_Memory.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Weight_Memory.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/hdl/LENET5_FIXED_CNN_IP_v1_0.v</spirit:name>
+        <spirit:name>src/ila_0/ila_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/bd71/hdl/LENET5_FIXED_CNN_IP_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1151,95 +1155,95 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Adder_Tree_25.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Adder_Tree_25.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Arbiter.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Arbiter.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Bias_Memory.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Bias_Memory.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Conv_Bank_5x5.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Conv_Bank_5x5.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Conv_Controller.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Conv_Controller.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/FC_Controller.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/FC_Controller.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/hdl/LENET5_FIXED_CNN_IP_v1_0_S00_AXI.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/hdl/LENET5_FIXED_CNN_IP_v1_0_S00_AXI.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Lenet5_Core.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Lenet5_Core.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Lenet5_Engine.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Lenet5_Engine.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Line_Buffer_5x5.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Line_Buffer_5x5.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Line_Buffer_Memory.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Line_Buffer_Memory.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/MaxPool2x2_Q16.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/MaxPool2x2_Q16.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/PEA_5x5.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/PEA_5x5.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/PE_5x5.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/PE_5x5.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Parallel_Data_Loader.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Parallel_Data_Loader.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Partial_Sum_Memory.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Partial_Sum_Memory.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Ping_Pong_Memory.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Ping_Pong_Memory.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Pool_Controller.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Pool_Controller.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Postprocess_Q16.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Postprocess_Q16.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/ReLU_Q16.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/ReLU_Q16.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Sync_RAM_1R1W.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Sync_RAM_1R1W.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/src/Weight_Memory.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/src/Weight_Memory.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fdc4/hdl/LENET5_FIXED_CNN_IP_v1_0.v</spirit:name>
+        <spirit:name>../../ipshared/bd71/hdl/LENET5_FIXED_CNN_IP_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1339,7 +1343,11 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>LENET5_FIXED_CNN_IP_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>4</xilinx:coreRevision>
+      <xilinx:xpmLibraries>
+        <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
+      </xilinx:xpmLibraries>
+      <xilinx:coreRevision>8</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ADDR_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ARUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
@@ -1385,12 +1393,12 @@
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2022.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a6aebf4"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a63f3fc"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="cc39d27d"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b600b3d4"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="73f4dcad"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="63ece6a0"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="0ba92b28"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="3e4a222d"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

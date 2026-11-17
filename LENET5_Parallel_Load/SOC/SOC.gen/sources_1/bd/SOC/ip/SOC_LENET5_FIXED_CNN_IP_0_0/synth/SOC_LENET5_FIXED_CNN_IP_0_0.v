@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:LENET5_FIXED_CNN_IP:1.0
-// IP Revision: 4
+// IP Revision: 8
 
 (* X_CORE_INFO = "LENET5_FIXED_CNN_IP_v1_0,Vivado 2022.2" *)
 (* CHECK_LICENSE_TYPE = "SOC_LENET5_FIXED_CNN_IP_0_0,LENET5_FIXED_CNN_IP_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "SOC_LENET5_FIXED_CNN_IP_0_0,LENET5_FIXED_CNN_IP_v1_0,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=LENET5_FIXED_CNN_IP,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=64,C_S00_AXI_ADDR_WIDTH=23}" *)
+(* CORE_GENERATION_INFO = "SOC_LENET5_FIXED_CNN_IP_0_0,LENET5_FIXED_CNN_IP_v1_0,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=LENET5_FIXED_CNN_IP,x_ipVersion=1.0,x_ipCoreRevision=8,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=64,C_S00_AXI_ADDR_WIDTH=23}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module SOC_LENET5_FIXED_CNN_IP_0_0 (
   s00_axi_aclk,

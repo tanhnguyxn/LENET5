@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/SOC/SOC_UIT/LENET5/LENET_5_Version1/LENET5/LENET5_Parallel_Load/SOC/SOC.runs/impl_1'
+HD_PWD='C:/SOC/SOC_UIT/LENET5/LENET5-main/LENET5-main/LENET5_Parallel_Load/SOC/SOC.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

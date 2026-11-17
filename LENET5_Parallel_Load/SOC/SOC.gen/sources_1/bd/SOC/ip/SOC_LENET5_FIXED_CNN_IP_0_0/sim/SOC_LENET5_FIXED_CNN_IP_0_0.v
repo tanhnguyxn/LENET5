@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:LENET5_FIXED_CNN_IP:1.0
-// IP Revision: 4
+// IP Revision: 8
 
 `timescale 1ns/1ps
 

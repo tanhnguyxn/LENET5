@@ -17,29 +17,30 @@
   "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/Adder_Tree_25.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/Arbiter.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/Bias_Memory.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/Conv_Bank_5x5.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/Conv_Controller.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/FC_Controller.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/hdl/LENET5_FIXED_CNN_IP_v1_0_S00_AXI.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/Lenet5_Core.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/Lenet5_Engine.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/Line_Buffer_5x5.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/Line_Buffer_Memory.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/MaxPool2x2_Q16.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/PEA_5x5.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/PE_5x5.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/Parallel_Data_Loader.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/Partial_Sum_Memory.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/Ping_Pong_Memory.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/Pool_Controller.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/Postprocess_Q16.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/ReLU_Q16.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/Sync_RAM_1R1W.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/src/Weight_Memory.v" \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/fdc4/hdl/LENET5_FIXED_CNN_IP_v1_0.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ip/SOC_LENET5_FIXED_CNN_IP_0_0/src/ila_0/sim/ila_0.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/Adder_Tree_25.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/Arbiter.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/Bias_Memory.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/Conv_Bank_5x5.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/Conv_Controller.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/FC_Controller.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/hdl/LENET5_FIXED_CNN_IP_v1_0_S00_AXI.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/Lenet5_Core.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/Lenet5_Engine.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/Line_Buffer_5x5.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/Line_Buffer_Memory.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/MaxPool2x2_Q16.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/PEA_5x5.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/PE_5x5.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/Parallel_Data_Loader.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/Partial_Sum_Memory.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/Ping_Pong_Memory.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/Pool_Controller.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/Postprocess_Q16.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/ReLU_Q16.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/Sync_RAM_1R1W.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/src/Weight_Memory.v" \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/bd71/hdl/LENET5_FIXED_CNN_IP_v1_0.v" \
   "../../../../SOC.gen/sources_1/bd/SOC/ip/SOC_LENET5_FIXED_CNN_IP_0_0/sim/SOC_LENET5_FIXED_CNN_IP_0_0.v" \
 -endlib
 -makelib xcelium_lib/axi_infrastructure_v1_1_0 \
@@ -78,6 +79,15 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../../SOC.gen/sources_1/bd/SOC/ip/SOC_xbar_0/sim/SOC_xbar_0.v" \
 -endlib
+-makelib xcelium_lib/lib_cdc_v1_0_2 \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/proc_sys_reset_v5_0_13 \
+  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../../SOC.gen/sources_1/bd/SOC/ip/SOC_rst_ps8_0_99M_0/sim/SOC_rst_ps8_0_99M_0.vhd" \
+-endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_27 \
   "../../../../SOC.gen/sources_1/bd/SOC/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
@@ -95,17 +105,6 @@
   "../../../../SOC.gen/sources_1/bd/SOC/ip/SOC_auto_pc_0/sim/SOC_auto_pc_0.v" \
   "../../../../SOC.gen/sources_1/bd/SOC/ip/SOC_auto_ds_1/sim/SOC_auto_ds_1.v" \
   "../../../../SOC.gen/sources_1/bd/SOC/ip/SOC_auto_pc_1/sim/SOC_auto_pc_1.v" \
--endlib
--makelib xcelium_lib/lib_cdc_v1_0_2 \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
--endlib
--makelib xcelium_lib/proc_sys_reset_v5_0_13 \
-  "../../../../SOC.gen/sources_1/bd/SOC/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../../SOC.gen/sources_1/bd/SOC/ip/SOC_rst_ps8_0_99M_0/sim/SOC_rst_ps8_0_99M_0.vhd" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
   "../../../../SOC.gen/sources_1/bd/SOC/sim/SOC.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
