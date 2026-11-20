@@ -1,0 +1,20 @@
+{
+  "epochs": 20,
+  "batch_size": 128,
+  "lr": 0.001,
+  "seed": 42,
+  "data_dir": "data",
+  "out_dir": "outputs",
+  "architecture": "LeNet5_28_ReLU_MaxPool",
+  "input_shape": [
+    1,
+    28,
+    28
+  ],
+  "preprocessing": "float32(pixel) / 255.0",
+  "flatten_order": "channel,row,column",
+  "parameters": 44426,
+  "torch_version": "2.7.1+cu128",
+  "cuda_version": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5060"
+}

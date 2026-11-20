@@ -1,0 +1,30 @@
+{
+  "images": 10000,
+  "full_test": true,
+  "float_accuracy_percent": 99.1,
+  "q88_accuracy_percent": 99.02,
+  "accuracy_drop_percentage_points": 0.0799999999999983,
+  "prediction_disagreements": 15,
+  "activation_saturation": {
+    "conv1": {
+      "saturated": 0,
+      "total": 34560000
+    },
+    "conv2": {
+      "saturated": 0,
+      "total": 10240000
+    },
+    "fc1": {
+      "saturated": 0,
+      "total": 1200000
+    },
+    "fc2": {
+      "saturated": 0,
+      "total": 840000
+    },
+    "fc3": {
+      "saturated": 0,
+      "total": 100000
+    }
+  }
+}

@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../../SOC.gen/sources_1/bd/SOC/ip/SOC_axi_smc_0/bd_0/ip/ip_1/sim/bd_683f_psr_aclk_0.vhd" \
+"../../../../SOC.gen/sources_1/bd/SOC/ip/SOC_rst_ps8_0_99M_0/sim/SOC_rst_ps8_0_99M_0.vhd" \
+
+nosort

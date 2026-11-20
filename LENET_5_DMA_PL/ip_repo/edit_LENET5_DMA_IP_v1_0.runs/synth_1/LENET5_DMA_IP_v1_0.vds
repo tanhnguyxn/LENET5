@@ -1,0 +1,1147 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Nov 20 00:03:10 2026
+# Process ID: 17844
+# Current directory: C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/edit_LENET5_DMA_IP_v1_0.runs/synth_1
+# Command line: vivado.exe -log LENET5_DMA_IP_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LENET5_DMA_IP_v1_0.tcl
+# Log file: C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/edit_LENET5_DMA_IP_v1_0.runs/synth_1/LENET5_DMA_IP_v1_0.vds
+# Journal file: C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/edit_LENET5_DMA_IP_v1_0.runs/synth_1\vivado.jou
+# Running On: LAPTOP-RKRVUI82, OS: Windows, CPU Frequency: 3187 MHz, CPU Physical cores: 12, Host memory: 16786 MB
+#-----------------------------------------------------------
+source LENET5_DMA_IP_v1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 999.652 ; gain = 115.453
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+Command: synth_design -top LENET5_DMA_IP_v1_0 -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23332
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-6901] identifier 'loader_started_r' is used before its declaration [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/FC_Controller.v:195]
+WARNING: [Synth 8-6901] identifier 'loader_done_w' is used before its declaration [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/FC_Controller.v:195]
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_ACLK', assumed default net type 'wire' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Lenet5_Core.v:26]
+WARNING: [Synth 8-6901] identifier 'r_data_o' is used before its declaration [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:600]
+WARNING: [Synth 8-11065] parameter 'DATA_WIDTH' becomes localparam in 'LENET5_DMA_IP_v1_0_S00_AXI' with formal parameter declaration list [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:605]
+WARNING: [Synth 8-11065] parameter 'FRAC_BITS' becomes localparam in 'LENET5_DMA_IP_v1_0_S00_AXI' with formal parameter declaration list [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:606]
+WARNING: [Synth 8-11065] parameter 'ACC_WIDTH' becomes localparam in 'LENET5_DMA_IP_v1_0_S00_AXI' with formal parameter declaration list [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:607]
+WARNING: [Synth 8-11065] parameter 'CONV1_CH' becomes localparam in 'LENET5_DMA_IP_v1_0_S00_AXI' with formal parameter declaration list [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:608]
+WARNING: [Synth 8-11065] parameter 'CONV2_CH' becomes localparam in 'LENET5_DMA_IP_v1_0_S00_AXI' with formal parameter declaration list [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:609]
+WARNING: [Synth 8-11065] parameter 'FC1_NEURONS' becomes localparam in 'LENET5_DMA_IP_v1_0_S00_AXI' with formal parameter declaration list [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:610]
+WARNING: [Synth 8-11065] parameter 'FC2_NEURONS' becomes localparam in 'LENET5_DMA_IP_v1_0_S00_AXI' with formal parameter declaration list [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:611]
+WARNING: [Synth 8-11065] parameter 'HOST_DATA_WIDTH' becomes localparam in 'LENET5_DMA_IP_v1_0_S00_AXI' with formal parameter declaration list [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:612]
+INFO: [Synth 8-11241] undeclared symbol 'rddata_rst_i', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:2188]
+INFO: [Synth 8-11241] undeclared symbol 'datard_overflow', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:2235]
+INFO: [Synth 8-11241] undeclared symbol 'datard_underflow', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:2236]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6379]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6381]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6412]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6414]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6447]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6449]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6554]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6556]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6589]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6591]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:10347]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:10349]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:10380]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:10382]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:10413]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:10415]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:65]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:67]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:100]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:102]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:135]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:137]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:170]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:172]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:205]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:207]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:240]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:242]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:275]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:277]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:310]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:312]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:345]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:347]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:380]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:382]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:415]
+INFO: [Common 17-14] Message 'Synth 8-11241' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4527]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4528]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4529]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4530]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4531]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4532]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4586]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4587]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4588]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:5486]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2414.789 ; gain = 346.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'LENET5_DMA_IP_v1_0' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'LENET5_DMA_IP_v1_0_S00_AXI' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 23 - type: integer 
+	Parameter C_S_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Lenet5_Core' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Lenet5_Core.v:4]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter FRAC_BITS bound to: 8 - type: integer 
+	Parameter ACC_WIDTH bound to: 48 - type: integer 
+	Parameter CONV1_CH bound to: 6 - type: integer 
+	Parameter CONV2_CH bound to: 16 - type: integer 
+	Parameter FC1_NEURONS bound to: 120 - type: integer 
+	Parameter FC2_NEURONS bound to: 84 - type: integer 
+	Parameter HOST_DATA_WIDTH bound to: 128 - type: integer 
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Lenet5_Core.v:25]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/synth/ila_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1534]
+INFO: [Synth 8-6155] done synthesizing module 'CFGLUT5' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1534]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131794]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131794]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644]
+INFO: [Synth 8-6157] synthesizing module 'SRLC16E' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131733]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC16E' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131733]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
+WARNING: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/synth/ila_0.v:3221]
+WARNING: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/synth/ila_0.v:3221]
+WARNING: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/synth/ila_0.v:3221]
+WARNING: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/synth/ila_0.v:3221]
+WARNING: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/synth/ila_0.v:3221]
+WARNING: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/synth/ila_0.v:3221]
+WARNING: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_12_ila' has 1033 connections declared, but only 1027 given [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/synth/ila_0.v:3221]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/synth/ila_0.v:48]
+WARNING: [Synth 8-7071] port 'probe6' of module 'ila_0' is unconnected for instance 'ila_debug' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Lenet5_Core.v:25]
+WARNING: [Synth 8-7023] instance 'ila_debug' of module 'ila_0' has 8 connections declared, but only 7 given [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Lenet5_Core.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Arbiter' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Arbiter.v:4]
+	Parameter CONV1_CH bound to: 6 - type: integer 
+	Parameter CONV2_CH bound to: 16 - type: integer 
+	Parameter FC1_NEURONS bound to: 120 - type: integer 
+	Parameter FC2_NEURONS bound to: 84 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Arbiter' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Arbiter.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Lenet5_Engine' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Lenet5_Engine.v:5]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter FRAC_BITS bound to: 8 - type: integer 
+	Parameter ACC_WIDTH bound to: 48 - type: integer 
+	Parameter CONV1_CH bound to: 6 - type: integer 
+	Parameter CONV2_CH bound to: 16 - type: integer 
+	Parameter FC1_NEURONS bound to: 120 - type: integer 
+	Parameter FC2_NEURONS bound to: 84 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv_Controller' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Conv_Controller.v:5]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ACC_WIDTH bound to: 48 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Line_Buffer_5x5' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Line_Buffer_5x5.v:5]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter MAX_WIDTH bound to: 28 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Line_Buffer_Memory' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Line_Buffer_Memory.v:4]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter MAX_WIDTH bound to: 28 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Line_Buffer_Memory' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Line_Buffer_Memory.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Line_Buffer_5x5' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Line_Buffer_5x5.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Postprocess_Q16' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Postprocess_Q16.v:4]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ACC_WIDTH bound to: 48 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ReLU_Q16' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/ReLU_Q16.v:3]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ReLU_Q16' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/ReLU_Q16.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Postprocess_Q16' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Postprocess_Q16.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Partial_Sum_Memory' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Partial_Sum_Memory.v:2]
+	Parameter ACC_WIDTH bound to: 48 - type: integer 
+	Parameter DEPTH bound to: 576 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Sync_RAM_1R1W' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Sync_RAM_1R1W.v:5]
+	Parameter DATA_WIDTH bound to: 48 - type: integer 
+	Parameter DEPTH bound to: 576 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Sync_RAM_1R1W' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Sync_RAM_1R1W.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Partial_Sum_Memory' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Partial_Sum_Memory.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Parallel_Data_Loader' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Parallel_Data_Loader.v:4]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Parallel_Data_Loader' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Parallel_Data_Loader.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Controller' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Conv_Controller.v:5]
+INFO: [Synth 8-6157] synthesizing module 'FC_Controller' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/FC_Controller.v:4]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ACC_WIDTH bound to: 48 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FC_Controller' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/FC_Controller.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Pool_Controller' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Pool_Controller.v:4]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MaxPool2x2_Q16' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/MaxPool2x2_Q16.v:3]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MaxPool2x2_Q16' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/MaxPool2x2_Q16.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_Controller' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Pool_Controller.v:4]
+INFO: [Synth 8-6157] synthesizing module 'PEA_5x5' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/PEA_5x5.v:4]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter FRAC_BITS bound to: 8 - type: integer 
+	Parameter ACC_WIDTH bound to: 48 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv_Bank_5x5' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Conv_Bank_5x5.v:4]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter FRAC_BITS bound to: 8 - type: integer 
+	Parameter ACC_WIDTH bound to: 48 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'PE_5x5' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/PE_5x5.v:4]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PE_5x5' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/PE_5x5.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Adder_Tree_25' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Adder_Tree_25.v:5]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter FRAC_BITS bound to: 8 - type: integer 
+	Parameter ACC_WIDTH bound to: 48 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Adder_Tree_25' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Adder_Tree_25.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Bank_5x5' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Conv_Bank_5x5.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'PEA_5x5' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/PEA_5x5.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Ping_Pong_Memory' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Ping_Pong_Memory.v:4]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DEPTH bound to: 3456 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Banked_RAM_128_16' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+	Parameter DEPTH bound to: 3456 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:137]
+INFO: [Synth 8-6155] done synthesizing module 'Banked_RAM_128_16' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Sync_RAM_1R1W__parameterized0' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Sync_RAM_1R1W.v:5]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DEPTH bound to: 3456 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Sync_RAM_1R1W__parameterized0' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Sync_RAM_1R1W.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Ping_Pong_Memory' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Ping_Pong_Memory.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Weight_Memory.v:4]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter CONV1_CH bound to: 6 - type: integer 
+	Parameter CONV2_CH bound to: 16 - type: integer 
+	Parameter FC1_NEURONS bound to: 120 - type: integer 
+	Parameter FC2_NEURONS bound to: 84 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Banked_RAM_128_16__parameterized0' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+	Parameter DEPTH bound to: 150 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:137]
+INFO: [Synth 8-6155] done synthesizing module 'Banked_RAM_128_16__parameterized0' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Banked_RAM_128_16__parameterized1' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+	Parameter DEPTH bound to: 2400 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:137]
+INFO: [Synth 8-6155] done synthesizing module 'Banked_RAM_128_16__parameterized1' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Banked_RAM_128_16__parameterized2' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+	Parameter DEPTH bound to: 30720 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:137]
+INFO: [Synth 8-6155] done synthesizing module 'Banked_RAM_128_16__parameterized2' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Banked_RAM_128_16__parameterized3' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+	Parameter DEPTH bound to: 10080 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:137]
+INFO: [Synth 8-6155] done synthesizing module 'Banked_RAM_128_16__parameterized3' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Banked_RAM_128_16__parameterized4' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+	Parameter DEPTH bound to: 840 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:137]
+INFO: [Synth 8-6155] done synthesizing module 'Banked_RAM_128_16__parameterized4' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Weight_Memory.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Bias_Memory' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Bias_Memory.v:4]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter CONV1_CH bound to: 6 - type: integer 
+	Parameter CONV2_CH bound to: 16 - type: integer 
+	Parameter FC1_NEURONS bound to: 120 - type: integer 
+	Parameter FC2_NEURONS bound to: 84 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Banked_RAM_128_16__parameterized5' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+	Parameter DEPTH bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:137]
+INFO: [Synth 8-6155] done synthesizing module 'Banked_RAM_128_16__parameterized5' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Banked_RAM_128_16__parameterized6' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:137]
+INFO: [Synth 8-6155] done synthesizing module 'Banked_RAM_128_16__parameterized6' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Banked_RAM_128_16__parameterized7' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+	Parameter DEPTH bound to: 120 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:137]
+INFO: [Synth 8-6155] done synthesizing module 'Banked_RAM_128_16__parameterized7' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Banked_RAM_128_16__parameterized8' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+	Parameter DEPTH bound to: 84 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:137]
+INFO: [Synth 8-6155] done synthesizing module 'Banked_RAM_128_16__parameterized8' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Banked_RAM_128_16__parameterized9' [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+	Parameter DEPTH bound to: 10 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:137]
+INFO: [Synth 8-6155] done synthesizing module 'Banked_RAM_128_16__parameterized9' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Banked_RAM_128_16.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Bias_Memory' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Bias_Memory.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet5_Engine' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Lenet5_Engine.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet5_Core' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Lenet5_Core.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'LENET5_DMA_IP_v1_0_S00_AXI' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'LENET5_DMA_IP_v1_0' (0#1) [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0.v:4]
+WARNING: [Synth 8-3848] Net sl_iport0 in module/entity ila_0 does not have driver. [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/synth/ila_0.v:110]
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_0_r_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Only 1 word in RAM 
+RAM "mem_0_r_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_1_r_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Only 1 word in RAM 
+RAM "mem_1_r_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_2_r_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Only 1 word in RAM 
+RAM "mem_2_r_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_3_r_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Only 1 word in RAM 
+RAM "mem_3_r_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_4_r_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Only 1 word in RAM 
+RAM "mem_4_r_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_5_r_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Only 1 word in RAM 
+RAM "mem_5_r_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_6_r_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Only 1 word in RAM 
+RAM "mem_6_r_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_7_r_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Only 1 word in RAM 
+RAM "mem_7_r_reg" dissolved into registers
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'core'. This will prevent further optimization [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:640]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_arbiter'. This will prevent further optimization [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Lenet5_Core.v:51]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_debug'. This will prevent further optimization [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Lenet5_Core.v:25]
+WARNING: [Synth 8-3848] Net S_AXI_ACLK in module/entity Lenet5_Core does not have driver. [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/RTL/Lenet5_Core.v:26]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[0].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[0].mem_data_out_reg[0] was removed.  [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:589]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[1].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[1].mem_data_out_reg[0] was removed.  [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:589]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[2].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[2].mem_data_out_reg[0] was removed.  [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:589]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[3].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[3].mem_data_out_reg[0] was removed.  [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:589]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[4].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[4].mem_data_out_reg[0] was removed.  [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:589]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[5].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[5].mem_data_out_reg[0] was removed.  [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:589]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[6].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[6].mem_data_out_reg[0] was removed.  [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:589]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[7].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[7].mem_data_out_reg[0] was removed.  [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:589]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[8].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[8].mem_data_out_reg[0] was removed.  [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:589]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[9].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[9].mem_data_out_reg[0] was removed.  [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:589]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[10].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[10].mem_data_out_reg[0] was removed.  [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:589]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[11].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[11].mem_data_out_reg[0] was removed.  [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:589]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[12].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[12].mem_data_out_reg[0] was removed.  [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:589]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[13].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[13].mem_data_out_reg[0] was removed.  [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:589]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[14].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[14].mem_data_out_reg[0] was removed.  [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:589]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[15].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[15].mem_data_out_reg[0] was removed.  [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:589]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:241]
+WARNING: [Synth 8-6014] Unused sequential element axi_arburst_reg was removed.  [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/LENET5_DMA_IP_1_0/hdl/LENET5_DMA_IP_v1_0_S00_AXI.v:445]
+WARNING: [Synth 8-7129] Port column_i[5] in module Line_Buffer_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLKB in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[320] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[319] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[318] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[317] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[316] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[315] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[314] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[313] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[312] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[311] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[310] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[309] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[308] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[307] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[306] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[305] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[304] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[303] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[302] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[301] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[300] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[299] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[298] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[297] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[296] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[295] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[294] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[293] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[292] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[291] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[290] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[289] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[288] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[287] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[286] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[285] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[284] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[283] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[282] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[281] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[280] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[279] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[278] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[277] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[276] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[275] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[274] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[273] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[272] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[271] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[270] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[269] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[268] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[267] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[266] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[265] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[264] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[263] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[262] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[261] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[260] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[259] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[258] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[257] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[256] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[255] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[254] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[253] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[252] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[251] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[250] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[249] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[248] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[247] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[246] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[245] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[244] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[243] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[242] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[241] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[240] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[239] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[238] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[237] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[236] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[235] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[234] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[233] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[232] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[231] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[230] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[229] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[228] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[227] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[226] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[225] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[224] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[223] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:24 ; elapsed = 00:01:29 . Memory (MB): peak = 2920.039 ; gain = 852.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:25 ; elapsed = 00:01:30 . Memory (MB): peak = 2920.039 ; gain = 852.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:25 ; elapsed = 00:01:30 . Memory (MB): peak = 2920.039 ; gain = 852.234
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2920.039 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 267 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'LENET5_DMA_IP_v1_0_S00_AXI_inst/core/ila_debug/inst'
+Finished Parsing XDC File [c:/SOC/SOC_UIT/LENET5/LENET_5_DMA/Simulation/Simulation.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'LENET5_DMA_IP_v1_0_S00_AXI_inst/core/ila_debug/inst'
+Parsing XDC File [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/edit_LENET5_DMA_IP_v1_0.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/edit_LENET5_DMA_IP_v1_0.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/edit_LENET5_DMA_IP_v1_0.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/LENET5_DMA_IP_v1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/LENET5_DMA_IP_v1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 3029.219 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 207 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 196 instances
+  CFGLUT5 => SRLC32E: 11 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.446 . Memory (MB): peak = 3029.219 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:55 ; elapsed = 00:02:00 . Memory (MB): peak = 3029.219 ; gain = 961.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:55 ; elapsed = 00:02:00 . Memory (MB): peak = 3029.219 ; gain = 961.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for LENET5_DMA_IP_v1_0_S00_AXI_inst/core/ila_debug/inst. (constraint file  C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/edit_LENET5_DMA_IP_v1_0.runs/synth_1/dont_touch.xdc, line 8).
+Applied set_property KEEP_HIERARCHY = SOFT for LENET5_DMA_IP_v1_0_S00_AXI_inst/core/ila_debug. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:56 ; elapsed = 00:02:01 . Memory (MB): peak = 3029.219 ; gain = 961.414
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized4'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized5'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized6'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized7'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ltlib_v1_0_0_generic_memrd'
+INFO: [Synth 8-802] inferred FSM for state register 'state_r_reg' in module 'Conv_Controller'
+INFO: [Synth 8-802] inferred FSM for state register 'state_r_reg' in module 'FC_Controller'
+INFO: [Synth 8-802] inferred FSM for state register 'state_r_reg' in module 'Lenet5_Engine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized6'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized7'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              RESET_ADDR |                          0000001 |                          0000001
+            REQUEST_READ |                          0000010 |                          0000010
+           WAIT_READ_ACK |                          0000100 |                          0000100
+             OUTPUT_DATA |                          0001000 |                          0001000
+                    IDLE |                          0010000 |                          0010000
+         INCREMENT_BLOCK |                          0100000 |                          0100000
+       INCREMENT_ADDRESS |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'ltlib_v1_0_0_generic_memrd'
+INFO: [Synth 8-6904] The RAM "Line_Buffer_Memory:/line0_r_reg" of size (depth=28 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "Line_Buffer_Memory:/line1_r_reg" of size (depth=28 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "Line_Buffer_Memory:/line2_r_reg" of size (depth=28 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "Line_Buffer_Memory:/line3_r_reg" of size (depth=28 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                              000
+               LOAD_DATA |                           000100 |                              001
+                 PREPARE |                           100000 |                              010
+                  STREAM |                           010000 |                              011
+                   FLUSH |                           001000 |                              100
+                   WRITE |                           000010 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_r_reg' using encoding 'one-hot' in module 'Conv_Controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                              000
+               LOAD_DATA |                           000100 |                              001
+                    LOAD |                           100000 |                              010
+                    SEND |                           010000 |                              011
+                DOT_WAIT |                           001000 |                              100
+                   WRITE |                           000010 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_r_reg' using encoding 'one-hot' in module 'FC_Controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                SEQ_IDLE |                           000001 |                              000
+               SEQ_START |                           100000 |                              001
+                SEQ_WAIT |                           010000 |                              010
+                 ARG_REQ |                           001000 |                              011
+                ARG_WAIT |                           000100 |                              100
+              SEQ_FINISH |                           000010 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_r_reg' using encoding 'one-hot' in module 'Lenet5_Engine'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:06 ; elapsed = 00:02:12 . Memory (MB): peak = 3029.219 ; gain = 961.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-6904] The RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_line_buffer/u_line_memory/line0_r_reg" of size (depth=28 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_line_buffer/u_line_memory/line1_r_reg" of size (depth=28 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_line_buffer/u_line_memory/line2_r_reg" of size (depth=28 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_line_buffer/u_line_memory/line3_r_reg" of size (depth=28 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_partial_sum_memory/u_bank_0/mem_r_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 12 for RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_partial_sum_memory/u_bank_0/mem_r_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_partial_sum_memory/u_bank_1/mem_r_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 12 for RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_partial_sum_memory/u_bank_1/mem_r_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_partial_sum_memory/u_bank_2/mem_r_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 12 for RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_partial_sum_memory/u_bank_2/mem_r_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_partial_sum_memory/u_bank_3/mem_r_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 12 for RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_partial_sum_memory/u_bank_3/mem_r_reg"
+INFO: [Synth 8-6904] The RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_line_buffer/u_line_memory/line0_r_reg" of size (depth=28 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_line_buffer/u_line_memory/line1_r_reg" of size (depth=28 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_line_buffer/u_line_memory/line2_r_reg" of size (depth=28 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_line_buffer/u_line_memory/line3_r_reg" of size (depth=28 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_partial_sum_memory/u_bank_0/mem_r_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 12 for RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_partial_sum_memory/u_bank_0/mem_r_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_partial_sum_memory/u_bank_1/mem_r_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 12 for RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_partial_sum_memory/u_bank_1/mem_r_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_partial_sum_memory/u_bank_2/mem_r_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 12 for RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_partial_sum_memory/u_bank_2/mem_r_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_partial_sum_memory/u_bank_3/mem_r_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 12 for RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_convi_1/u_partial_sum_memory/u_bank_3/mem_r_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_enginei_3/u_ping_pong_memory/u_pong/mem_r_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 7 for RAM "\LENET5_DMA_IP_v1_0_S00_AXI_inst/core /u_enginei_3/u_ping_pong_memory/u_pong/mem_r_reg"
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:35 ; elapsed = 00:04:46 . Memory (MB): peak = 3029.219 ; gain = 961.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:26 ; elapsed = 00:05:41 . Memory (MB): peak = 3250.414 ; gain = 1182.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:35 ; elapsed = 00:05:50 . Memory (MB): peak = 3332.258 ; gain = 1264.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_conv/u_partial_sum_memory/u_bank_0/mem_r_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_conv/u_partial_sum_memory/u_bank_0/mem_r_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_conv/u_partial_sum_memory/u_bank_1/mem_r_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_conv/u_partial_sum_memory/u_bank_1/mem_r_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_conv/u_partial_sum_memory/u_bank_2/mem_r_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_conv/u_partial_sum_memory/u_bank_2/mem_r_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_conv/u_partial_sum_memory/u_bank_3/mem_r_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_conv/u_partial_sum_memory/u_bank_3/mem_r_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_ping_pong_memory/u_ping/mem_0_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_ping_pong_memory/u_ping/mem_1_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_ping_pong_memory/u_ping/mem_2_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_ping_pong_memory/u_ping/mem_3_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_ping_pong_memory/u_ping/mem_4_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_ping_pong_memory/u_ping/mem_5_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_ping_pong_memory/u_ping/mem_6_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_ping_pong_memory/u_ping/mem_7_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_ping_pong_memory/u_pong/mem_r_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_ping_pong_memory/u_pong/mem_r_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_1/mem_0_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_1/mem_1_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_1/mem_2_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_1/mem_3_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_1/mem_4_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_1/mem_5_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_1/mem_6_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_1/mem_7_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_2/mem_0_r_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_2/mem_0_r_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_2/mem_1_r_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_2/mem_1_r_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_2/mem_2_r_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_2/mem_2_r_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_2/mem_3_r_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_2/mem_3_r_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_2/mem_4_r_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_2/mem_4_r_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_2/mem_5_r_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_2/mem_5_r_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_2/mem_6_r_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_2/mem_6_r_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_2/mem_7_r_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_2/mem_7_r_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_3/mem_0_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_3/mem_1_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_3/mem_2_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_3/mem_3_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_3/mem_4_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_3/mem_5_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_3/mem_6_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_3/mem_7_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_4/mem_0_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_4/mem_1_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_4/mem_2_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_4/mem_3_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_4/mem_4_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_4/mem_5_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_4/mem_6_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LENET5_DMA_IP_v1_0_S00_AXI_inst/core/u_engine/u_weight_memory/u_layer_4/mem_7_r_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:06:03 ; elapsed = 00:06:22 . Memory (MB): peak = 3393.680 ; gain = 1325.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin dummy_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[36] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[35] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[34] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[33] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[32] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:trig_in to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:trig_out_ack to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_debug:clk to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_debug:probe6[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_debug:probe6[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_debug:probe6[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_debug:probe6[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_debug:probe6[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_debug:probe6[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_debug:probe6[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_debug:probe6[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_debug:probe6[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_debug:probe6[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_debug:probe6[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_debug:probe6[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_debug:probe6[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_debug:probe6[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_debug:probe6[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_debug:probe6[0] to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:06:20 ; elapsed = 00:06:39 . Memory (MB): peak = 3393.680 ; gain = 1325.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:06:20 ; elapsed = 00:06:40 . Memory (MB): peak = 3393.680 ; gain = 1325.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:29 ; elapsed = 00:06:49 . Memory (MB): peak = 3393.680 ; gain = 1325.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:30 ; elapsed = 00:06:50 . Memory (MB): peak = 3393.680 ; gain = 1325.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:32 ; elapsed = 00:06:52 . Memory (MB): peak = 3393.680 ; gain = 1325.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:32 ; elapsed = 00:06:52 . Memory (MB): peak = 3393.680 ; gain = 1325.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Conv_Controller | D+A*B       | 30     | 16     | -      | 5      | 32     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|Conv_Controller | C+D+A*B     | 30     | 16     | 48     | 5      | 16     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|Conv_Controller | C+A*B       | 16     | 10     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Conv_Controller | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Conv_Controller | C+A*B       | 16     | 3      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Conv_Controller | A*B         | 16     | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Conv_Controller | A*B         | 3      | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FC_Controller   | C+A*B       | 16     | 9      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|PE_5x5          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|Pool_Controller | A*B         | 16     | 5      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Pool_Controller | C+A*B       | 16     | 5      | 7      | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Pool_Controller | A*B         | 16     | 4      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Pool_Controller | A*B         | 6      | 4      | -      | -      | 11     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Pool_Controller | PCIN+A*B    | 16     | 4      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |BUFG            |     1|
+|2     |CARRY4          |    60|
+|3     |CARRY8          |   614|
+|4     |CFGLUT5         |   207|
+|5     |DSP_ALU         |   113|
+|6     |DSP_A_B_DATA    |   113|
+|7     |DSP_C_DATA      |   113|
+|9     |DSP_MULTIPLIER  |   113|
+|11    |DSP_M_DATA      |   113|
+|12    |DSP_OUTPUT      |   113|
+|14    |DSP_PREADD      |   113|
+|15    |DSP_PREADD_DATA |   113|
+|17    |LUT1            |   106|
+|18    |LUT2            |  6164|
+|19    |LUT3            |  3063|
+|20    |LUT4            |  2413|
+|21    |LUT5            |  1296|
+|22    |LUT6            |  1835|
+|23    |MUXF7           |   179|
+|24    |MUXF8           |     1|
+|25    |RAM16X1D        |   768|
+|26    |RAM16X1S        |   128|
+|27    |RAMB18E2        |    28|
+|28    |RAMB36E2        |    39|
+|32    |SRL16E          |   324|
+|33    |SRLC16E         |     2|
+|34    |SRLC32E         |    17|
+|35    |FDCE            | 10628|
+|36    |FDPE            |     3|
+|37    |FDRE            |  3564|
+|38    |FDSE            |    10|
+|39    |IBUF            |   191|
+|40    |OBUF            |   144|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:33 ; elapsed = 00:06:53 . Memory (MB): peak = 3393.680 ; gain = 1325.875
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 127 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:50 ; elapsed = 00:06:34 . Memory (MB): peak = 3393.680 ; gain = 1216.695
+Synthesis Optimization Complete : Time (s): cpu = 00:06:33 ; elapsed = 00:06:53 . Memory (MB): peak = 3393.680 ; gain = 1325.875
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3401.332 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2262 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 5 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: LENET5_DMA_IP_v1_0_S00_AXI_inst/core/ila_debug UUID: ff6880af-1a61-5ad4-b85f-a4ea99ccfc9b 
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 3498.234 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1441 instances were transformed.
+  (CARRY4) => CARRY8: 33 instances
+  BUFG => BUFGCE: 1 instance 
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 196 instances
+  CFGLUT5 => SRLC32E: 11 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 113 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 191 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 768 instances
+  RAM16X1S => RAM32X1S (RAMS32): 128 instances
+
+Synth Design complete, checksum: d5ddbd84
+INFO: [Common 17-83] Releasing license: Synthesis
+336 Infos, 233 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:07:16 ; elapsed = 00:07:41 . Memory (MB): peak = 3498.234 ; gain = 2409.145
+INFO: [Common 17-1381] The checkpoint 'C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/ip_repo/edit_LENET5_DMA_IP_v1_0.runs/synth_1/LENET5_DMA_IP_v1_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 3498.234 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file LENET5_DMA_IP_v1_0_utilization_synth.rpt -pb LENET5_DMA_IP_v1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 20 00:11:33 2026...

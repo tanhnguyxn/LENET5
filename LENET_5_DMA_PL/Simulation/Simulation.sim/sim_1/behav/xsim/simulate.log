@@ -1,0 +1,14 @@
+Time resolution is 1 ps
+Prediction: class= 7 score=0b3f
+digit          0: RTL=f793 golden=f793
+digit          1: RTL=00fb golden=00fb
+digit          2: RTL=f974 golden=f974
+digit          3: RTL=fcd7 golden=fcd7
+digit          4: RTL=ff70 golden=ff70
+digit          5: RTL=f971 golden=f971
+digit          6: RTL=f041 golden=f041
+digit          7: RTL=0b3f golden=0b3f
+digit          8: RTL=f92a golden=f92a
+digit          9: RTL=ffcf golden=ffcf
+PASS: all 10 logits match
+$finish called at time : 797131 ns : File "C:/SOC/SOC_UIT/LENET5/LENET_5_DMA/testbench/tb_lenet5_core.v" Line 92
